@@ -67,10 +67,10 @@ function scr_comandi(){
 	downRelease = keyboard_check_released(vk_down) || gamepad_button_check_released(player,gp_padd)
 	confirmRelease = keyboard_check_released(vk_space) || gamepad_button_check_released(player,gp_face1)
 	
-	/*click_sx = mouse_check_button_pressed(mb_left);
-	if obj_control.mobile
+	click_sx = mouse_check_button_pressed(mb_left);
+	if obj_control.smartphone
 		sclick_sx = mouse_check_button_released(mb_left);
 	else
-		sclick_sx = mouse_check_button_pressed(mb_left);*/
+		sclick_sx = mouse_check_button_pressed(mb_left);
 
 }

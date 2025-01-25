@@ -40,9 +40,14 @@ if (_best_bolla != noone)
 		obj_managerbolla.create_bolla(_best_bolla, x, y)
 		var aa = point_direction(obj_player.x, obj_player.y, _best_bolla.x, _best_bolla.y)
 		obj_managerbolla.alberobolle.state_angle_impulse_shot = aa*random(2)
-		audio_play_sound(choose(sfx_bubble_hit_0, sfx_bubble_hit_1, sfx_bubble_hit_2), 1, false);
-		audio_play_sound(sfx_bubble_add, 1, false);
-		audio_play_sound(sfx_bubble_add_2, 1, false);
+		//codice di Mad
+		//audio_play_sound(choose(sfx_bubble_hit_0, sfx_bubble_hit_1, sfx_bubble_hit_2), 1, false);
+		//audio_play_sound(sfx_bubble_add, 1, false);
+		//audio_play_sound(sfx_bubble_add_2, 1, false);
+		
+		parte_audio(global.sfx,choose(sfx_bubble_hit_0, sfx_bubble_hit_1, sfx_bubble_hit_2), 1, false);
+		parte_audio(global.sfx,sfx_bubble_add, 1, false);
+		parte_audio(global.sfx,sfx_bubble_add_2, 1, false);
 		instance_destroy()
 	}
 }

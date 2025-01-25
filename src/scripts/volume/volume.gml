@@ -70,15 +70,15 @@ if global.sfxvol < 1
 }
 
 
-function parte_audio(variabile,suono,priority,loops){//serve per sentire sia suoni che effetti sonori con il volume giusto, quindi a volume 0 non si sente niente per tutta la durata del brano
+function parte_audio(variabile,suono,priority,loops,pitch=1){//serve per sentire sia suoni che effetti sonori con il volume giusto, quindi a volume 0 non si sente niente per tutta la durata del brano
 if variabile = global.snd
 {
-	global.snd = audio_play_sound(suono,priority,loops);
+	global.snd = audio_play_sound(suono,priority,loops,,,pitch);
 	audio_sound_gain(global.snd,global.sndvol,0);
 }
 else if variabile = global.sfx
 {
-	global.sfx = audio_play_sound(suono,priority,loops);
+	global.sfx = audio_play_sound(suono,priority,loops,,,pitch);
 	audio_sound_gain(global.sfx,global.sfxvol,0);
 }
 }
@@ -127,16 +127,16 @@ for (iv = 0; iv < global.tacchevol + 1; iv+=1)
 		if scr_clicca(xx,yy,16,16)
 		{
 			global.sndvol = (iv)*0.2;
-			/*global.sfx = audio_play_sound(sfx_click,1,false);
+			global.sfx = audio_play_sound(sfx_bubble_pop,1,false);
 			audio_sound_set_track_position(global.sfx,0.20);
-			audio_sound_gain(global.sfx,global.sfxvol,0);*/
+			audio_sound_gain(global.sfx,global.sfxvol,0);
 		}
 		if scr_clicca(xx,yy2,16,16)
 		{
 			global.sfxvol = (iv)*0.2;
-			/*global.sfx = audio_play_sound(sfx_click,1,false);
+			global.sfx = audio_play_sound(sfx_bubble_pop,1,false);
 			audio_sound_set_track_position(global.sfx,0.20);
-			audio_sound_gain(global.sfx,global.sfxvol,0);*/
+			audio_sound_gain(global.sfx,global.sfxvol,0);
 		}
 	}
 	xx += icow;

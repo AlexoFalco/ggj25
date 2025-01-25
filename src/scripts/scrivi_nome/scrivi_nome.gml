@@ -38,7 +38,7 @@ function scr_scrivinome(){
 						keyboard_string = string_copy(nome,1,14);
 				}*/
 			}
-			if keyboard_check_pressed(vk_enter)
+			if pausePress
 			{
 				scr_finenome();
 				keyboard_virtual_hide();
@@ -65,10 +65,10 @@ function scr_scrivinome(){
 			}
 			
 		}
-		else
-		{
-			keyboard_string = nome;
-		}
+	else
+	{
+		keyboard_string = nome;
+	}
 	
 }
 

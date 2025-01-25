@@ -51,7 +51,9 @@ setShot = function()
 {
 	playerStato = stateShot;
 	var b = instance_create_depth(x,y-30,depth,obj_player_proiettile);
-	audio_play_sound(sfx_player_fire, 1, false, 1, 0, random_range(0.9, 1.1));
+	//codice di Mad
+	//audio_play_sound(sfx_player_fire, 1, false, 1, 0, random_range(0.9, 1.1));
+	parte_audio(global.sfx,sfx_player_fire, 1, false, random_range(0.9, 1.1));
 	sprite_index = spr_player_fire;
 	image_index = 0
 	is_shot = true
