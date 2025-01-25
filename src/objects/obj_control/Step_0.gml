@@ -1,7 +1,15 @@
 if room = rm_menu
 {
-	if pausePress
-		room_goto(rm_game);
+	if premuto_per_iniziare
+		scr_menuiniziale_step();
+	else
+	{
+		if confirmPress || pausePress
+		{
+			premuto_per_iniziare = true;
+			parte_audio(global.sfx,sfx_bubble_pop,1,false);
+		}
+	}
 }
 else if room = rm_game
 {
@@ -10,6 +18,9 @@ else if room = rm_game
 		alarm[4] = 180;
 		if !instance_exists(obj_bolla)
 			gameover = true;
+			
+		if pausePress && !pausato
+			pausato = true;
 	}
 	else
 	{

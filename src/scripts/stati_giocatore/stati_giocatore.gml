@@ -23,7 +23,13 @@ function stateSlide(){
 	
 	sprite_index = spr_player_slide;
 	
-	x += hSp;
+	x += hSp; 
+	
+	if confirmPress
+	{
+		var b = instance_create_depth(x,y-30,depth,obj_player_proiettile);
+		audio_play_sound(sfx_player_fire, 1, false, 1, 0, random_range(0.9, 1.1));
+	}
 	
 }
 
@@ -68,7 +74,9 @@ function stateWalk(){
 				{
 					sprite_index : _sprind
 				});
-				audio_play_sound(choose(sfx_player_walk_0, sfx_player_walk_1, sfx_player_walk_2, sfx_player_walk_3), 1, false);
+				//codice di Mad
+				//audio_play_sound(choose(sfx_player_walk_0, sfx_player_walk_1, sfx_player_walk_2, sfx_player_walk_3), 1, false);
+				parte_audio(global.sfx,choose(sfx_player_walk_0, sfx_player_walk_1, sfx_player_walk_2, sfx_player_walk_3), 1, false);
 			}
 		}
 		else snd_iswalking = false;

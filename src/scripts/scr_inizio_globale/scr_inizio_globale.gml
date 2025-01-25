@@ -54,6 +54,7 @@ function scr_inizio_globale()
 
 	{//salvataggio
 		caricato = false;	
+		prima_registrazione = false;
 	}
 		
 	{//gameplay

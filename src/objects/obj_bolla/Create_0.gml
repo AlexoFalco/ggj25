@@ -23,7 +23,21 @@ surface_ref = noone
 baricentro = noone
 mediana_centro_figli = 0
 
+uccididiscendenza = false;
+_call = noone;
+
 set_shot_inpulse = function()
 {
-	state_vel_inpulse_shot += constant_inpulse_shot
+	var parent = noone;
+	with obj_bolla
+	{
+		if array_contains(figli, other.id)
+		{
+			parent = id;
+		}
+	}
+	if parent = noone
+		state_vel_inpulse_shot += constant_inpulse_shot
+	else	
+		parent.set_shot_inpulse();
 }
