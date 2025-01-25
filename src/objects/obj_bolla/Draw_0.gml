@@ -4,6 +4,8 @@
 //draw_circle(x,y,raggio, true)
 //draw_sprite_ext(sprite_index, image_index, x,y,image_xscale, image_yscale, image_angle, image_blend, 0.1)
 
+//draw_self()
+
 var color_dark = #c7d6ea
 var color_light = #ffffff
 var color_fill = #ffffff
@@ -36,4 +38,7 @@ surface_reset_target()
 
 draw_surface(surface_ref, x-raggio-1,y-raggio-1)
 
-draw_sprite_ext(spr_bolla_riflesso, 0, x+lengthdir_x(raggio*0.8-3, 45), y+lengthdir_y(raggio*0.8-3, 45), 1, 1, 0, c_white, 0.5)
+if (raggio > 3)
+{
+	draw_sprite_ext(spr_bolla_riflesso, 0, x+lengthdir_x(raggio*0.8-3, 45), y+lengthdir_y(raggio*0.8-3, 45), 1, 1, 0, c_white, 0.5)
+}
