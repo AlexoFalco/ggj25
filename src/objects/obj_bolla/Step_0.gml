@@ -4,7 +4,6 @@ image_yscale = raggio/8;
 var n_figli = array_length(figli)
 var i;
 
-
 if (n_figli > 4)
 {
 	instance_destroy(obj_bolla)
@@ -142,13 +141,13 @@ if (is_radice)
 		state_vel_inpulse_shot = 0
 	}
 	
-	y += constant_gravity - state_vel_inpulse_shot
+	//y += constant_gravity - state_vel_inpulse_shot
 	
-	x += lengthdir_x(state_vel_inpulse_shot, state_angle_impulse_shot)
-		 + sin(current_time/2000)/10 + bounce_strong
+	//x += lengthdir_x(state_vel_inpulse_shot, state_angle_impulse_shot)
+	//	 + sin(current_time/2000)/10 + bounce_strong
 	
-	y = clamp(y, camera_ymin, global.terreno - raggio)
-	x = clamp(x, obj_camera.xmin, obj_camera.xmax)
+	//y = clamp(y, camera_ymin, global.terreno - raggio)
+	//x = clamp(x, obj_camera.xmin, obj_camera.xmax)
 	
 }
 

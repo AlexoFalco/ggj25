@@ -11,10 +11,10 @@ if !inizioPartita
 
 if instance_exists(obj_bolla)
 {
-	if obj_bolla.raggio < 60
+	if obj_bolla.raggio < 40
 		gosz = 320;
 	else
-		gosz = obj_bolla.raggio * 5;
+		gosz = obj_bolla.raggio * 6;
 }
 
 //xmin = max(xmin, 320/2)
