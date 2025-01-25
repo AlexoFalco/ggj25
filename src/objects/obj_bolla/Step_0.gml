@@ -6,10 +6,24 @@ var i;
 
 if (n_figli > 4)
 {
-	instance_destroy(obj_bolla)
+	instance_destroy(figli[4]);
+	instance_destroy();
 	return;
 }
+if y+raggio >= global.terreno
+{
+	uccididiscendenza = true;
+}
 
+if uccididiscendenza
+{
+	for (i = 0; i < n_figli; i+=1)
+	{	
+		figli[i].uccididiscendenza = true;
+	}
+	instance_destroy();
+
+}
 
 
 baricentro = {
@@ -20,10 +34,25 @@ baricentro = {
 
 //in caso di collisioni tra bolle fratelle bisogna mettere delle distanze
 
+var contatto = false;
+	with obj_bolla
+	{
+		if other.is_radice && is_radice
+		{
+			if place_meeting(x,y,other)
+			{
+				other.speed = (raggio + other.raggio - point_distance(x,y,other.x, other.y))/10
+				other.direction = point_direction(x,y,other.x, other.y)
+				contatto = true;
+			}
+		}
+	}
+	if contatto = false
+		speed = 0;
+
 var minX = x, maxY = y, maxX = x, minY = y;
 for (i = 0; i < n_figli; i+=1)
-{
-	
+{	
 	if figli[i].x - figli[i].raggio < minX
 		minX = figli[i].x - figli[i].raggio;
 		
@@ -85,12 +114,15 @@ for (i = 0; i < n_figli; i+=1)
 	else
 	{
 		call_later(1, time_source_units_frames, method({padre: {baricentro: baricentro, n_figli: n_figli, rotazione: rotazione, distanzadalcentro: distanzadalcentro }, figlio: figlio, distanzarandom: distanzarandom, i: i, xdiff: xdiff, ydiff: ydiff}, function(){
-			var raggionormalizzato = figlio.raggio
-			var _target_x = padre.baricentro.x + lengthdir_x(raggionormalizzato + padre.distanzadalcentro + distanzarandom, 360/padre.n_figli* i + padre.rotazione);
-			var _target_y = padre.baricentro.y + lengthdir_y(raggionormalizzato + padre.distanzadalcentro + distanzarandom, 360/padre.n_figli* i + padre.rotazione);
+			if instance_exists(figlio)
+			{
+				var raggionormalizzato = figlio.raggio
+				var _target_x = padre.baricentro.x + lengthdir_x(raggionormalizzato + padre.distanzadalcentro + distanzarandom, 360/padre.n_figli* i + padre.rotazione);
+				var _target_y = padre.baricentro.y + lengthdir_y(raggionormalizzato + padre.distanzadalcentro + distanzarandom, 360/padre.n_figli* i + padre.rotazione);
 		
-			figlio.x = lerp(figlio.x, _target_x, 0.05)-xdiff
-			figlio.y = lerp(figlio.y, _target_y, 0.05)-ydiff
+				figlio.x = lerp(figlio.x, _target_x, 0.05)-xdiff
+				figlio.y = lerp(figlio.y, _target_y, 0.05)-ydiff
+			}
 		}))
 	}	
 }
@@ -116,7 +148,7 @@ if (n_figli > 0)
 }
 else
 {
-	raggio += raggio_incremento_passivo
+	//raggio += raggio_incremento_passivo
 }
 
 
