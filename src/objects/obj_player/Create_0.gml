@@ -7,7 +7,7 @@ dir = 1
 
 
 state_move_player = 0
-constant_move_speed = 3
+constant_move_speed = 1.5
 constant_slide_speed = 4
 
 horMov = 0;	verMov = 0;
