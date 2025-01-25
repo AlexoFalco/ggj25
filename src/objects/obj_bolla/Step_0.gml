@@ -8,7 +8,7 @@ baricentro = {
 	x : x,
 	y : y
 }
-baricentro = get_baricentro(figli, n_figli)
+//baricentro = get_baricentro(figli, n_figli)
 
 //in caso di collisioni tra bolle fratelle bisogna mettere delle distanze
 
@@ -97,3 +97,6 @@ if (is_radice)
 }
 
 rotazione += rotazione_vel
+
+x = clamp(x, obj_camera.xmin, obj_camera.xmax)
+y = clamp(y, 0, global.terreno - raggio)
