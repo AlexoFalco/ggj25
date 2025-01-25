@@ -7,7 +7,9 @@ else if room = rm_game
 {
 	if !gameover
 	{
-		
+		alarm[4] = 180;
+		if !instance_exists(obj_bolla)
+			gameover = true;
 	}
 	else
 	{

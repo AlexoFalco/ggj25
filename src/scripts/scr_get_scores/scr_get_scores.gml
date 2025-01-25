@@ -14,11 +14,19 @@ function scr_get_scores(argument0) {
 	if room = rm_game
 		posizioni = 5;
 	else
-		posizioni = 20;
+		posizioni = 10;
+		
+	var _ng, b;
+	switch con.NumGiocatori
+	{
+		case 1: _ng = "&level=PSCA1"; b = "https://ftp.goldensun.altervista.org/PSCA1/display.php";  break;
+		case 2: _ng = "&level=PSCA2"; b = "https://ftp.goldensun.altervista.org/PSCA2/display.php";  break;
+		case 3: _ng = "&level=PSCA3"; b = "https://ftp.goldensun.altervista.org/PSCA3/display.php";  break;
+		case 4: _ng = "&level=PSCA4"; b = "https://ftp.goldensun.altervista.org/PSCA4/display.php";  break;
+	}
 	
-	var args = "name="+name+"&no_lines="+string(posizioni)+"&secret_key=t35vgvref565"+"&level=CDTS";
+	var args = "name="+name+"&no_lines="+string(posizioni)+"&secret_key=t35vgvref565"+string(_ng);
 
-	var b = "https://ftp.goldensun.altervista.org/CDTS/display.php";
 	var map = ds_map_create();
 	ds_map_add(map, "Content-Type", "application/x-www-form-urlencoded");
 

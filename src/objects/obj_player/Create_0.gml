@@ -1,5 +1,6 @@
-event_inherited();
-//player = con.playerbirth;
+//event_inherited();
+con = obj_control;
+player = con.playerbirth;
 horMov = 0;	
 verMov = 0;
 dir = 1

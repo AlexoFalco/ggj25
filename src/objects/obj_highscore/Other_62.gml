@@ -1,4 +1,4 @@
-/// @description  @description  Receiving the result from Altervista
+/// @description Receiving the result from Altervista
 if (ds_map_find_value(async_load, "id") == get_highscores)
 {
     if (ds_map_find_value(async_load, "status") == 0)
@@ -7,7 +7,10 @@ if (ds_map_find_value(async_load, "id") == get_highscores)
         //show_debug_message(text2);
         if (text2 == "")
         {
-            text1 = "Nessuna connessione ad Internet.";
+			if global.language = lang.ita
+				text1 = "Nessuna connessione ad Internet.";
+			else if global.language = lang.eng
+				text1 = "No Internet connection.";
             text2 = "";
         }
         else if (text2 == "IOException")

@@ -17,3 +17,5 @@ surface_ref = noone
 
 baricentro = noone
 mediana_centro_figli = 0
+
+id_score = 1;

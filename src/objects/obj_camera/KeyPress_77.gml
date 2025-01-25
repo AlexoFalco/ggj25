@@ -8,9 +8,9 @@ if xmax < room_width - 320
 	xmax +=ingr;
 else
 	xmax = room_width-320;
-if ymin > 370
+/*if ymin > 370
 	ymin -= ingr;
 else
-	ymin = 370;
+	ymin = 370;*/
 	
 nIngrandimento++;

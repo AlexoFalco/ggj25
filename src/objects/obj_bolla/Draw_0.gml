@@ -10,6 +10,10 @@ var color_dark = #c7d6ea
 var color_light = #ffffff
 var color_fill = #ffffff
 
+draw_set_alpha(0.3);
+draw_circle_color(x,y,raggio,#FFA3F5,#CCF9FF,false);
+draw_set_alpha(1);
+
 draw_set_alpha(0.1)
 draw_set_color(color_fill)
 draw_circle(x-1,y-1,raggio, 0)

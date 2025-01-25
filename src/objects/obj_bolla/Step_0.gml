@@ -141,3 +141,5 @@ if obj_camera.inizioPartita
 	x = clamp(x, obj_camera.xmin, obj_camera.xmax)
 	y = clamp(y, 0, global.terreno - raggio)
 }
+
+//id_score = floor(raggio/4);
