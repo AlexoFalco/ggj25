@@ -5,7 +5,19 @@ if room = rm_menu
 }
 else if room = rm_game
 {
-	
+	if !gameover
+	{
+		
+	}
+	else
+	{
+		if floor(punteggio) > record[NumGiocatori]
+		{
+			record[NumGiocatori] = floor(punteggio);
+			scr_send_score(nome,punteggio);
+			scr_record();
+		}	
+	}
 }
 
 if room != rm_game || (room = rm_game && gameover)

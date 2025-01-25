@@ -4,4 +4,7 @@ if room = rm_menu
 	disegna_musica(30,30);
 }
 else
-	debug_text($"{camera_get_view_x(view_camera[0])}, {camera_get_view_y(view_camera[0])}");
+{
+	draw_text_border(display_get_gui_width()*15/16,display_get_gui_height()/16,fnt_base,$"Score\n{punteggio}", $"Punti\n{punteggio}")
+	//debug_text($"{camera_get_view_x(view_camera[0])}, {camera_get_view_y(view_camera[0])}");
+}
