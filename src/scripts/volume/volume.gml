@@ -70,16 +70,16 @@ if global.sfxvol < 1
 }
 
 
-function parte_audio(variabile,suono,priority,loops,pitch=1){//serve per sentire sia suoni che effetti sonori con il volume giusto, quindi a volume 0 non si sente niente per tutta la durata del brano
+function parte_audio(variabile,suono,priority,loops,pitch=1,gain=0,offset=0){//serve per sentire sia suoni che effetti sonori con il volume giusto, quindi a volume 0 non si sente niente per tutta la durata del brano
 if variabile = global.snd
 {
-	global.snd = audio_play_sound(suono,priority,loops,,,pitch);
-	audio_sound_gain(global.snd,global.sndvol,0);
+	global.snd = audio_play_sound(suono,priority,loops,gain,offset,pitch);
+	audio_sound_gain(global.snd,global.sndvol,gain);
 }
 else if variabile = global.sfx
 {
-	global.sfx = audio_play_sound(suono,priority,loops,,,pitch);
-	audio_sound_gain(global.sfx,global.sfxvol,0);
+	global.sfx = audio_play_sound(suono,priority,loops,gain,offset,pitch);
+	audio_sound_gain(global.sfx,global.sfxvol,gain);
 }
 }
 

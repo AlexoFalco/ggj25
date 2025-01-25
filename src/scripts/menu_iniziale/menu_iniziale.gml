@@ -266,6 +266,10 @@ function riconoscimenti_draw(){
 	MyMadnessWorks (Ivan Zanotti)
 	AlexoFalco (Alessandro Falconi)
 	Goldensun (Aurelio D'Amelio)
-	Zigoon (Marco Luigi D'Amelio",,,0.5,,1000);
+	Zigoon (Marco Luigi D'Amelio)
+	
+	Fonts:
+	'Super Bubble' by fsuarez913
+	'Power Red & Green'",,,,0.5,,1000);
 	
 }
