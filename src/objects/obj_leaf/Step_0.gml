@@ -3,7 +3,7 @@ if (stop_wind)
 	speed_gravity = lerp(speed_gravity, 1, 0.05)
 	y+=speed_gravity
 	speed = lerp(speed, 0, 0.05)
-	x+=dsin(stop_wind_count*(2+3*random(1)))
+	x-=dsin(stop_wind_count*(2+3*random(1)))
 	stop_wind_count+=1
 	image_alpha-=0.05
 }

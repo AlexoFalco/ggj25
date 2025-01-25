@@ -125,3 +125,12 @@ if (_best_bolla != noone)
 //}
 
 //return;
+
+with obj_enemy
+{
+	if place_meeting(x,y,other) && !bollato
+	{
+		bollato = true;
+		instance_destroy(other);
+	}
+}

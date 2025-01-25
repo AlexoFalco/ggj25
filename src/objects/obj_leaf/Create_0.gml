@@ -10,5 +10,5 @@ speed_gravity = 0
 
 call_later(1, time_source_units_frames, function(){
 	speed = 1+random(1)
-	direction = dir == 1 ? 350-random(30) : 190 + random(30)
+	direction = dir == 1 ? 190 + random(30) : 350-random(30)
 })
