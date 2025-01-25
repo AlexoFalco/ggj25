@@ -1,39 +1,21 @@
 function stateIdle(){
-	if alarm[0] = -1 //se non sta sparando
+
+	sprite_index = spr_player;
+	
+	if (horMov != 0)
 	{
-		hSp = horMov*4;
-		x += hSp;
-		if hSp != 0
-		{
-			sprite_index = spr_player_walk;
-			image_xscale = sign(hSp);
-		}
-		else
-			sprite_index = spr_player;
-			
-		if inputMagnitude != 0
-		{
-			direction = inputDirection;
-		}
-		if horMov != 0
-		{
-			hdir = sign(hSp);
-		}
-			
-		if backPress || downPress
-		{
-			moveDistanceRemaining = 60;
-			playerStato = stateSlide;
-		}
+		setWalk()
+	}
+	else if confirmPress
+	{
+		setShot()
 	}
 
 }
 
 function stateSlide(){
-	var _vel = 4;
 	
-	hSp = lengthdir_x(_vel,direction);
-	//vSp = lengthdir_y(_vel,direction);
+	hSp = lengthdir_x(constant_slide_speed,direction);
 	if horMov != 0
 	{
 		hdir = sign(hSp);
@@ -41,12 +23,53 @@ function stateSlide(){
 	
 	sprite_index = spr_player_slide;
 	
-	moveDistanceRemaining = max(0,moveDistanceRemaining-_vel);
-	//show_message(moveDistanceRemaining);
-	if moveDistanceRemaining <= 0
-	{
-		playerStato = stateIdle;
-	}
 	x += hSp;
 	
+}
+
+function stateShot(){
+}
+
+
+function stateWalk(){
+	
+	if (dxHold)
+	{
+		state_move_player = 1
+	}
+	else if (sxHold)
+	{
+		state_move_player = -1
+	}
+	else
+	{
+		state_move_player = lerp(state_move_player, 0, 0.2)
+		if (abs(state_move_player) < 0.2)
+		{
+			state_move_player = 0
+			setIdle()
+		}
+		horMov = state_move_player
+	}
+	if horMov != 0
+	{
+		sprite_index = spr_player_walk;
+		image_xscale = sign(horMov);
+	}
+			
+	x += horMov * constant_move_speed;
+	if inputMagnitude != 0
+	{
+		direction = inputDirection;
+	}
+	
+	if backPress || downPress
+	{
+		moveDistanceRemaining = 60;
+		setSlide()
+	}
+	else if confirmPress
+	{
+		setShot()
+	}
 }

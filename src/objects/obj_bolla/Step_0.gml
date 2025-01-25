@@ -13,6 +13,27 @@ baricentro = {
 
 //in caso di collisioni tra bolle fratelle bisogna mettere delle distanze
 
+var minX = x, maxY = y, maxX = x, minY = y;
+for (i = 0; i < n_figli; i+=1)
+{
+	
+	if figli[i].x - figli[i].raggio < minX
+		minX = figli[i].x - figli[i].raggio;
+		
+	if figli[i].y - figli[i].raggio < minY
+		minY = figli[i].y - figli[i].raggio;
+		
+	if figli[i].x + figli[i].raggio > maxX
+		maxX = figli[i].x + figli[i].raggio;
+		
+	if figli[i].y + figli[i].raggio > maxY
+		maxY = figli[i].y + figli[i].raggio;
+}
+var mediox = (maxX + minX)/2;
+var medioy = (maxY + minY)/2;
+var xdiff = mediox - x;
+var ydiff = medioy - y;
+
 distanzadalcentro = 0
 mediana_centro_figli = 0
 for (i = 0; i < n_figli; i+=1)
@@ -56,13 +77,13 @@ for (i = 0; i < n_figli; i+=1)
 	}
 	else
 	{
-		call_later(1, time_source_units_frames, method({padre: {baricentro: baricentro, n_figli: n_figli, rotazione: rotazione, distanzadalcentro: distanzadalcentro }, figlio: figlio, distanzarandom: distanzarandom, i: i}, function(){
+		call_later(1, time_source_units_frames, method({padre: {baricentro: baricentro, n_figli: n_figli, rotazione: rotazione, distanzadalcentro: distanzadalcentro }, figlio: figlio, distanzarandom: distanzarandom, i: i, xdiff: xdiff, ydiff: ydiff}, function(){
 			var raggionormalizzato = figlio.raggio
 			var _target_x = padre.baricentro.x + lengthdir_x(raggionormalizzato + padre.distanzadalcentro + distanzarandom, 360/padre.n_figli* i + padre.rotazione);
 			var _target_y = padre.baricentro.y + lengthdir_y(raggionormalizzato + padre.distanzadalcentro + distanzarandom, 360/padre.n_figli* i + padre.rotazione);
 		
-			figlio.x = lerp(figlio.x, _target_x, 0.05)
-			figlio.y = lerp(figlio.y, _target_y, 0.05)
+			figlio.x = lerp(figlio.x, _target_x, 0.05)-xdiff
+			figlio.y = lerp(figlio.y, _target_y, 0.05)-ydiff
 		}))
 	}	
 }

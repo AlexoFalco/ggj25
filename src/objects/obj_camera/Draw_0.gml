@@ -1,3 +1,4 @@
 var h = 0;
 draw_set_color(c_white);
-draw_rectangle(xmin+h,ymin+h,xmax-h,ymax-h,true);
+draw_line(xmin, 0, xmin, 1000)
+draw_line(xmax, 0, xmax, 1000)

@@ -1,14 +1,64 @@
 event_inherited();
 //player = con.playerbirth;
+horMov = 0;	
+verMov = 0;
+dir = 1
+
+
+state_move_player = 0
+constant_move_speed = 3
+constant_slide_speed = 4
+
 horMov = 0;	verMov = 0;
 
 playerStato = stateIdle;
 
+flag_first_state = false
+
 enum PLAYERSTATE
 {
 	IDLE,
-	SLIDE
+	SLIDE,
+	WALK,
+	SHOT
 };
 
 playerScript[PLAYERSTATE.IDLE] = stateIdle;
 playerScript[PLAYERSTATE.SLIDE] = stateSlide;
+playerScript[PLAYERSTATE.WALK] = stateWalk;
+playerScript[PLAYERSTATE.SHOT] = stateShot;
+
+setIdle = function()
+{
+	playerStato = stateIdle;
+	image_index = 0
+}
+
+setSlide = function()
+{
+	playerStato = stateSlide;
+	image_index = 0
+}
+
+setWalk = function()
+{
+	playerStato = stateWalk;
+	image_index = 0
+}
+
+setShot = function()
+{
+	playerStato = stateShot;
+	var b = instance_create_depth(x,y-30,depth,obj_player_proiettile);
+	sprite_index = spr_player_fire;
+	image_index = 0
+	is_shot = true
+	is_move = false
+	with b
+	{
+		player = other.player;	
+	}
+}
+
+
+
