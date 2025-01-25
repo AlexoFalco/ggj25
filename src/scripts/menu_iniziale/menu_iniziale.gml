@@ -22,14 +22,14 @@ if !menugiocatori && !impostazioni && !instance_exists(obj_highscore) && !ricono
 		{
 			case MENUINIZIALE.GIOCA:
 			{
-				if file_exists("gnap.sav")
-					room_goto(rm_game);
-				else
+				if !file_exists("gnap.sav") || (file_exists("gnap.sav") && versione = "0.0.0")
 				{
 					prima_registrazione = true;
 					scrivendo = true;
 					keyboard_string = nome;
 				}
+				else
+					room_goto(rm_game);
 			}
 			break;
 			case MENUINIZIALE.RECORD:
@@ -67,7 +67,7 @@ else if prima_registrazione
 	{
 		scr_scrivinome();
 		
-		if pausePress
+		if pausePress && keyboard_string != ""
 		{
 			scrivendo = false;
 			room_goto(rm_game);

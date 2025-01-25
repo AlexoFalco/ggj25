@@ -14,6 +14,10 @@ if room = rm_menu
 	{
 		scr_impostazioni_draw();
 	}
+	else
+	{
+		draw_text_border(display_get_gui_width()/12,display_get_gui_height()*15/16,fnt_base,$"Ver. {versione}");
+	}
 }
 else
 {

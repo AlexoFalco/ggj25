@@ -11,17 +11,17 @@ else
 
 switch blowStrength
 {
-	case 1.5:
+	case 1.2:
 	{
 		_windeng = "Weak";	_windita = "debole";
 	}
 	break;
-	case 2:
+	case 1.4:
 	{
 		_windeng = "Moderate";	_windita = "moderato";
 	}
 	break;
-	case 2.5:
+	case 1.6:
 	{
 		_windeng = "Strong";	_windita = "forte";
 	}
