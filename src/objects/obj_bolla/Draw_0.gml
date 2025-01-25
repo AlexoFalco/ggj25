@@ -42,4 +42,3 @@ if (raggio > 3)
 {
 	draw_sprite_ext(spr_bolla_riflesso, 0, x+lengthdir_x(raggio*0.8-3, 45), y+lengthdir_y(raggio*0.8-3, 45), 1, 1, 0, c_white, 0.5)
 }
-debug_text(x)

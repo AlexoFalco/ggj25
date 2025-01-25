@@ -31,6 +31,11 @@ switch blowStrength
 		_windeng = "Very strong";	_windita = "molto forte";
 	}
 	break;
+	default:
+	{
+		_windeng ="Forza: "+string(blowStrength);	_windita = "Forza: "+string(blowStrength);
+	}
+	break;
 }
 
 draw_text_border(display_get_gui_width()/2,display_get_gui_height()/8,fnt_base,$"{_windeng} wind from {_direng}", $"Vento {_windita} da {_dirita}",c_white);
