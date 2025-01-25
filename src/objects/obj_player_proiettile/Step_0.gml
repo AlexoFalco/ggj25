@@ -1,41 +1,64 @@
-ds_list_clear(list_collision)
+
 var is_coll = place_meeting(x, y, obj_bolla)
 
-var _best_bolla = noone
-
-if (is_coll)
+if (is_coll and _best_bolla == noone)
 {
-	var coll_count = collision_line_list(x, y, x, y-100, obj_bolla, true, true, list_collision, true)
-	
-	if (coll_count == 1)
+	var coll_count = collision_rectangle_list(x-4, y, x+4, y-1000, obj_bolla, true, true, list_collision, true)
+
+	for(var i=0;i<coll_count;i+=1)
 	{
-		_best_bolla = ds_list_find_value(list_collision, 0)
-	}
-	else if (coll_count > 1)
-	{
-		for(var i = 0; i<coll_count;i+=1)
+		var _coll_item = ds_list_find_value(list_collision, i)
+		var _has_figli = array_length(_coll_item.figli) > 0
+		
+		if (_best_bolla == noone)
 		{
-			var _item = ds_list_find_value(list_collision, i)
-			if (array_length(_item.figli) == 0)
+			_best_bolla = _coll_item;
+			continue;
+		}
+		else
+		{
+			var _has_best_figli = array_length(_best_bolla.figli) > 0
+			
+			if (_has_best_figli and _has_figli)
 			{
-				if (_best_bolla == noone)
+				if (_coll_item.raggio < _best_bolla.raggio )
 				{
-					_best_bolla = _item
+					_best_bolla = _coll_item
 				}
 				else
 				{
-					if (_item.y > _best_bolla.y)
-					{
-						_best_bolla = _item
-					}
+					_best_bolla = list_collision[| 0]
 				}
 			}
+			else if (_has_best_figli == false and _has_figli)
+			{
+				_best_bolla = _best_bolla
+			}
+			else if (_has_best_figli and _has_figli == false)
+			{
+				_best_bolla = _coll_item
+			}
+			else if (_has_best_figli == false and _has_figli == false)
+			{
+				if (_coll_item.raggio < _best_bolla.raggio )
+				{
+					_best_bolla = _coll_item
+				}
+				else
+				{
+					//_best_bolla = list_collision[| 0]
+				}
+			}
+			
+			
 		}
 	}
 }
+
 if (_best_bolla != noone)
 {
-	
+	move_towards_point(_best_bolla.x, _best_bolla.y, 2)
+	if (point_distance(x,y,_best_bolla.x,_best_bolla.y) < _best_bolla.raggio*2)
 	{
 		obj_managerbolla.create_bolla(_best_bolla, x, y)
 		var aa = point_direction(obj_player.x, obj_player.y, _best_bolla.x, _best_bolla.y)
@@ -43,3 +66,5 @@ if (_best_bolla != noone)
 		instance_destroy()
 	}
 }
+
+return;

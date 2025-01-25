@@ -2,7 +2,7 @@
 alberobolle = noone;
 window_set_size(640,360)
 
-alberobolle = instance_create_depth(room_width/2, camera_get_view_y(view_camera[0])+80, 0, obj_bolla);
+alberobolle = instance_create_depth(room_width/2, camera_get_view_y(view_camera[0]), 0, obj_bolla);
 alberobolle.is_radice = true
 
 

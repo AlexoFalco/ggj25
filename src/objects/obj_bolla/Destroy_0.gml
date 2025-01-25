@@ -1,1 +1,0 @@
-obj_control.punteggio += id_score;

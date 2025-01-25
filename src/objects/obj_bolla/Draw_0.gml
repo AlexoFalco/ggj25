@@ -29,7 +29,7 @@ surface_set_target(surface_ref)
 
 draw_set_color(c_black)
 draw_set_circle_precision(64)
-draw_circle(raggio,raggio,raggio, true)
+//draw_circle(raggio,raggio,raggio, true)
 
 
 gpu_set_blendmode_ext(bm_src_alpha, bm_one);
