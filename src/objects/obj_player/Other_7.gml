@@ -1,4 +1,8 @@
 if (sprite_index == spr_player_fire)
 {
-	is_shot = false
+	setIdle()
+}
+if (sprite_index == spr_player_slide)
+{
+	setIdle()
 }
