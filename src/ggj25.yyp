@@ -30,7 +30,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"ggj25",
   "resources":[
@@ -63,6 +63,7 @@
     {"id":{"name":"scr_comandi","path":"scripts/scr_comandi/scr_comandi.yy",},},
     {"id":{"name":"scr_inizio_globale","path":"scripts/scr_inizio_globale/scr_inizio_globale.yy",},},
     {"id":{"name":"scrivi_nome","path":"scripts/scrivi_nome/scrivi_nome.yy",},},
+    {"id":{"name":"stati_giocatore","path":"scripts/stati_giocatore/stati_giocatore.yy",},},
     {"id":{"name":"testo","path":"scripts/testo/testo.yy",},},
     {"id":{"name":"volume","path":"scripts/volume/volume.yy",},},
     {"id":{"name":"spr_bee","path":"sprites/spr_bee/spr_bee.yy",},},
@@ -71,6 +72,7 @@
     {"id":{"name":"spr_iconine","path":"sprites/spr_iconine/spr_iconine.yy",},},
     {"id":{"name":"spr_leaf","path":"sprites/spr_leaf/spr_leaf.yy",},},
     {"id":{"name":"spr_player_fire","path":"sprites/spr_player_fire/spr_player_fire.yy",},},
+    {"id":{"name":"spr_player_slide","path":"sprites/spr_player_slide/spr_player_slide.yy",},},
     {"id":{"name":"spr_player_walk","path":"sprites/spr_player_walk/spr_player_walk.yy",},},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},},

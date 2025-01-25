@@ -1,17 +1,8 @@
+horMov = dxHold - sxHold;
+inputDirection = point_direction(0,0,(horMov),0);
+inputMagnitude = (horMov != 0);
 
-if alarm[0] = -1 //se non sta sparando
-{
-	horMov = dxHold - sxHold;
-	hSp = horMov*4;
-	x += hSp;
-	if hSp != 0
-	{
-		sprite_index = spr_player_walk;
-		image_xscale = sign(hSp);
-	}
-	else
-		sprite_index = spr_player;
-}
+script_execute(playerStato);
 
 
 with obj_camera
