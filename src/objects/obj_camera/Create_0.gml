@@ -1,7 +1,8 @@
 con = obj_control;
 
 	
-sz = 320; gosz = sz;
+sz = 320;
+gosz = sz;
 szh = sz/320*180;
 gox = x; goy= y;
 

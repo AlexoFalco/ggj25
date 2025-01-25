@@ -115,7 +115,13 @@ else
 
 if (is_radice)
 {
-	x +=sin(current_time/2000)/10
+	if (abs(bounce_strong))
+	{
+		bounce_strong = sign(bounce_strong) * lerp(abs(bounce_strong), 0, 0.05)
+	}
+	
+	x +=sin(current_time/2000)/10 + bounce_strong
+	
 }
 
 rotazione += rotazione_vel
@@ -124,6 +130,14 @@ if obj_camera.inizioPartita
 {
 //	if x > obj_camera.xmax || x < obj_camera.xmin
 		//show_message(x)
+	if (x > obj_camera.xmax-20)
+	{
+		bounce_strong-=constant_bounce_strong
+	}
+	if (x < obj_camera.xmin+20)
+	{
+		bounce_strong+=constant_bounce_strong
+	}
 	x = clamp(x, obj_camera.xmin, obj_camera.xmax)
 	y = clamp(y, 0, global.terreno - raggio)
 }
