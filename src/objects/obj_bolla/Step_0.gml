@@ -8,7 +8,6 @@ baricentro = {
 	x : x,
 	y : y
 }
-baricentro = get_baricentro(figli, n_figli)
 
 //in caso di collisioni tra bolle fratelle bisogna mettere delle distanze
 
