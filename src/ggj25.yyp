@@ -37,6 +37,7 @@
     {"id":{"name":"obj_bolla","path":"objects/obj_bolla/obj_bolla.yy",},},
     {"id":{"name":"obj_managerbolla","path":"objects/obj_managerbolla/obj_managerbolla.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"spr_bolla_riflesso","path":"sprites/spr_bolla_riflesso/spr_bolla_riflesso.yy",},},
     {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},},
   ],
   "resourceType":"GMProject",
