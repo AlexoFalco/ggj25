@@ -38,6 +38,8 @@ if (_best_bolla != noone)
 	
 	{
 		obj_managerbolla.create_bolla(_best_bolla, x, y)
+		var aa = point_direction(obj_player.x, obj_player.y, _best_bolla.x, _best_bolla.y)
+		obj_managerbolla.alberobolle.state_angle_impulse_shot = aa*random(2)
 		instance_destroy()
 	}
 }

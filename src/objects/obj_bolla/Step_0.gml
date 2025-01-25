@@ -120,16 +120,7 @@ if (is_radice)
 		bounce_strong = sign(bounce_strong) * lerp(abs(bounce_strong), 0, 0.05)
 	}
 	
-	x +=sin(current_time/2000)/10 + bounce_strong
-	
-}
-
-rotazione += rotazione_vel
-
-if obj_camera.inizioPartita
-{
-//	if x > obj_camera.xmax || x < obj_camera.xmin
-		//show_message(x)
+	var camera_ymin = camera_get_view_y(view_camera[0])
 	if (x > obj_camera.xmax-20)
 	{
 		bounce_strong-=constant_bounce_strong
@@ -138,6 +129,21 @@ if obj_camera.inizioPartita
 	{
 		bounce_strong+=constant_bounce_strong
 	}
+	if (y < camera_ymin+10)
+	{
+		state_vel_inpulse_shot = 0
+	}
+	
+	y += constant_gravity - state_vel_inpulse_shot
+	
+	x += lengthdir_x(state_vel_inpulse_shot, state_angle_impulse_shot)
+		 + sin(current_time/2000)/10 + bounce_strong
+	
+	y = clamp(y, camera_ymin, global.terreno - raggio)
 	x = clamp(x, obj_camera.xmin, obj_camera.xmax)
-	y = clamp(y, 0, global.terreno - raggio)
+	
 }
+
+rotazione += rotazione_vel
+
+state_vel_inpulse_shot = lerp(state_vel_inpulse_shot, 0, 0.02)
