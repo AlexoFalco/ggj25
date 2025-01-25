@@ -45,6 +45,7 @@
     {"id":{"name":"obj_leaf","path":"objects/obj_leaf/obj_leaf.yy",},},
     {"id":{"name":"obj_managerbolla","path":"objects/obj_managerbolla/obj_managerbolla.yy",},},
     {"id":{"name":"obj_parent","path":"objects/obj_parent/obj_parent.yy",},},
+    {"id":{"name":"obj_player_proiettile","path":"objects/obj_player_proiettile/obj_player_proiettile.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_playercontrol","path":"objects/obj_playercontrol/obj_playercontrol.yy",},},
     {"id":{"name":"obj_projectile","path":"objects/obj_projectile/obj_projectile.yy",},},

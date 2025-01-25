@@ -20,7 +20,7 @@ with obj_camera
 
 if confirmPress
 {
-	var b = instance_create_depth(x,y,depth,obj_projectile);
+	var b = instance_create_depth(x,y,depth,obj_player_proiettile);
 	sprite_index = spr_player_fire;
 	alarm[0] = 30;
 	with b

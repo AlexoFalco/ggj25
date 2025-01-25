@@ -4,6 +4,7 @@ image_yscale = raggio/8;
 var n_figli = array_length(figli)
 var i;
 
+
 baricentro = {
 	x : x,
 	y : y
@@ -98,5 +99,10 @@ if (is_radice)
 
 rotazione += rotazione_vel
 
-x = clamp(x, obj_camera.xmin, obj_camera.xmax)
-y = clamp(y, 0, global.terreno - raggio)
+if obj_camera.inizioPartita
+{
+//	if x > obj_camera.xmax || x < obj_camera.xmin
+		//show_message(x)
+	x = clamp(x, obj_camera.xmin, obj_camera.xmax)
+	y = clamp(y, 0, global.terreno - raggio)
+}

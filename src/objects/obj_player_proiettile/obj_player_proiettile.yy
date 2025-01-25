@@ -9,8 +9,8 @@
   "name":"obj_player_proiettile",
   "overriddenProperties":[],
   "parent":{
-    "name":"Player",
-    "path":"folders/Player.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_player_proiettile",
-    "path":"sprites/spr_player_proiettile/spr_player_proiettile.yy",
+    "name":"spr_bollaSparo",
+    "path":"sprites/spr_bollaSparo/spr_bollaSparo.yy",
   },
   "spriteMaskId":null,
   "visible":true,

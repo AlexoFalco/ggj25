@@ -24,6 +24,11 @@ if !inizioPartita
 	inizioPartita = true;
 }
 
+//if instance_exists(obj_bolla)
+//{
+//	xmin
+//}
+
 //xmin = max(xmin, 320/2)
 //xmax = min(xmax, room_width-320/2)
 //ymin = max(ymin, 180/2)
