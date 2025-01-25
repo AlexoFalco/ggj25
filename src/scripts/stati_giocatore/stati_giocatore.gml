@@ -55,6 +55,23 @@ function stateWalk(){
 	{
 		sprite_index = spr_player_walk;
 		image_xscale = sign(horMov);
+		
+		var _ind = floor(image_index);
+		if (_ind == 0 or _ind == floor(image_number/2))
+		{
+			if (!obj_player.snd_iswalking)
+			{
+				snd_iswalking = true;
+				instance_create_layer(x, y, "Instances", obj_water_ripple);
+				var _sprind = choose(spr_water_splash_1, spr_water_splash_2);
+				instance_create_layer(x, y, "Instances", obj_water_splash,
+				{
+					sprite_index : _sprind
+				});
+				audio_play_sound(choose(sfx_player_walk_0, sfx_player_walk_1, sfx_player_walk_2, sfx_player_walk_3), 1, false);
+			}
+		}
+		else snd_iswalking = false;
 	}
 			
 	x += horMov * constant_move_speed;
@@ -66,6 +83,8 @@ function stateWalk(){
 	if backPress || downPress
 	{
 		moveDistanceRemaining = 60;
+		instance_create_layer(x, y, "Instances", obj_water_ripple);
+		instance_create_layer(x, y, "Instances", obj_water_splash);
 		setSlide()
 	}
 	else if confirmPress

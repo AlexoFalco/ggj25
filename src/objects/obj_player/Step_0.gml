@@ -2,6 +2,7 @@ horMov = dxHold - sxHold;
 inputDirection = point_direction(0,0,(horMov),0);
 inputMagnitude = (horMov != 0);
 
+
 //if (is_shot == false)
 //{
 //	if (dxHold)
