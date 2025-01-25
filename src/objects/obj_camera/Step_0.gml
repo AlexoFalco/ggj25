@@ -8,14 +8,27 @@ if !inizioPartita
 	xmax+=150;
 	inizioPartita = true;
 }
-
-if instance_exists(obj_bolla)
+var raggiomax=0, ymin=global.terreno;
+with obj_bolla
 {
-	if obj_bolla.raggio < 40
+	if is_radice
+	{
+		if raggio > raggiomax
+			raggiomax = raggio;
+		if y-raggio < ymin
+			ymin = y-raggio;
+	}
+}
+
+	if raggiomax < 40
 		gosz = 320;
 	else
-		gosz = obj_bolla.raggio * 6;
-}
+		gosz = raggiomax * 6;
+		
+	if ymin-20 < camera_get_view_y(view_camera)
+	{
+		gosz = max(gosz, (camera_get_view_y(view_camera)+camera_get_view_height(view_camera)-ymin)/180*320);
+	}
 
 //xmin = max(xmin, 320/2)
 //xmax = min(xmax, room_width-320/2)
