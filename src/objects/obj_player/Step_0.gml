@@ -1,16 +1,57 @@
 
-if alarm[0] = -1 //se non sta sparando
+
+if (is_shot == false)
 {
-	horMov = dxHold - sxHold;
-	hSp = horMov*4;
-	x += hSp;
-	if hSp != 0
+	if (dxHold)
 	{
-		sprite_index = spr_player_walk;
-		image_xscale = sign(hSp);
+		horMov = 1
+		dir = 1
+	}
+	else if (sxHold)
+	{
+		horMov = -1
+		dir = -1
 	}
 	else
+	{
+		horMov = dir * lerp(abs(horMov), 0, 0.2)
+		if (abs(horMov) < 0.2)
+		{
+			horMov = 0
+			is_move = false
+		}
+	}
+}
+	
+
+if (is_shot)
+{
+	horMov = dir * lerp(abs(horMov), 0, 0.2)
+}
+
+if (abs(horMov) > 0 and is_shot == false)
+{
+	is_move = true
+}
+
+	
+hSp = horMov*constants_move;
+
+//esecuzione fisica
+x += hSp;
+
+//macchina a stati per le animazioni
+if (is_shot == false)
+{
+	if (is_move)
+	{
+		sprite_index = spr_player_walk;
+		image_xscale = sign(dir);
+	}
+	else
+	{
 		sprite_index = spr_player;
+	}
 }
 
 
@@ -22,7 +63,9 @@ if confirmPress
 {
 	var b = instance_create_depth(x,y-30,depth,obj_player_proiettile);
 	sprite_index = spr_player_fire;
-	alarm[0] = 30;
+	image_index = 0
+	is_shot = true
+	is_move = false
 	with b
 	{
 		player = other.player;	
