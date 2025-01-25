@@ -1,6 +1,6 @@
 /// @description 
-image_xscale = raggio/32;
-image_yscale = raggio/32;
+image_xscale = raggio/8;
+image_yscale = raggio/8;
 var n_figli = array_length(figli)
 var i;
 var minX = x;
@@ -61,4 +61,4 @@ if n_figli > 0
 raggio = distmax //max((maxX - minX) /2, (maxY-minY)/2);
 }
 if n_figli = 0
-raggio+=0.1
+raggio+=0.01
