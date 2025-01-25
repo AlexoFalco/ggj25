@@ -1,0 +1,1 @@
+//debug_text(player, display_get_gui_width()/2,display_get_gui_height()/4);
