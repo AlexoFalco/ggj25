@@ -23,7 +23,13 @@ function stateSlide(){
 	
 	sprite_index = spr_player_slide;
 	
-	x += hSp;
+	x += hSp; 
+	
+	if confirmPress
+	{
+		var b = instance_create_depth(x,y-30,depth,obj_player_proiettile);
+		audio_play_sound(sfx_player_fire, 1, false, 1, 0, random_range(0.9, 1.1));
+	}
 	
 }
 
