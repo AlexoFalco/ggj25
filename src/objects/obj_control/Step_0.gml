@@ -38,6 +38,6 @@ if room != rm_game || (room = rm_game && gameover)
 	{//allarmi in-game
 		alarm[0] = 300; //vento
 		alarm[1] = 120; //ape
-		alarm[2] = 240; //foglia
+		//alarm[2] = 240; //foglia
 	}
 }
