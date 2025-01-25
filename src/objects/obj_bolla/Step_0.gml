@@ -5,6 +5,14 @@ var n_figli = array_length(figli)
 var i;
 
 
+if (n_figli > 4)
+{
+	instance_destroy(obj_bolla)
+	return;
+}
+
+
+
 baricentro = {
 	x : x,
 	y : y
@@ -144,6 +152,6 @@ if (is_radice)
 	
 }
 
-rotazione += rotazione_vel
+rotazione += rotazione_vel * n_figli
 
 state_vel_inpulse_shot = lerp(state_vel_inpulse_shot, 0, 0.02)
