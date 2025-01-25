@@ -100,21 +100,21 @@ function draw_text_highscore(xx, yy, str, name, colour) {
 	    }
 	    // Draw the numbers (1. 2. etc)
 	    draw_set_halign(fa_right);
-	        draw_text(room_width/2 - 225 - 10,yy+height,str3a[i]);
+	        draw_text(display_get_gui_height()/2 - 100 - 10,yy+height,str3a[i]);
   
 	    // Draw the name
 	    draw_set_halign(fa_left);
-	        draw_text(room_width/2 - 225, yy+height,str3b[i]);
+	        draw_text(display_get_gui_height()/2 - 100, yy+height,str3b[i]);
 			
 	    // Draw the score
 			draw_set_halign(fa_center);
-	        draw_text(room_width/2 + 25, yy+height,string(str3c[i]));
+	        draw_text(display_get_gui_height()/2 + 150, yy+height,string(str3c[i]));
     
 	    // Draw the time
-	    draw_text(room_width/2 + 175,yy+height,str3e[i]);
+	    draw_text(display_get_gui_height()/2 + 325,yy+height,str3e[i]);
 		
 		if keyboard_check(vk_alt) && keyboard_check(vk_control) && keyboard_check(ord("P"))
-			draw_text(room_width/2 + 275,yy+height,str3d[i]);
+			draw_text(display_get_gui_height()/2 + 275,yy+height,str3d[i]);
 		
   
 	    // Increment height
