@@ -53,6 +53,7 @@ else if room = rm_game
 		if confirmPress && selegameover = 0 && alarm[9] <= 0
 			{
 				partita_iniziando = true;
+				parte_audio(global.sfx,choose(sfx_gnap_zig, sfx_gnap_1, sfx_gnap_2, sfx_gnap_3, sfx_gnap_0),1,false,,5)
 				partitaReset();
 				room_restart();
 			}
