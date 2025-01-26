@@ -32,7 +32,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"ggj25",
   "resources":[
@@ -91,6 +91,7 @@
     {"id":{"name":"sfx_bubble_hit_1","path":"sounds/sfx_bubble_hit_1/sfx_bubble_hit_1.yy",},},
     {"id":{"name":"sfx_bubble_hit_2","path":"sounds/sfx_bubble_hit_2/sfx_bubble_hit_2.yy",},},
     {"id":{"name":"sfx_bubble_pop","path":"sounds/sfx_bubble_pop/sfx_bubble_pop.yy",},},
+    {"id":{"name":"sfx_gnap_zig","path":"sounds/sfx_gnap_zig/sfx_gnap_zig.yy",},},
     {"id":{"name":"sfx_player_fire","path":"sounds/sfx_player_fire/sfx_player_fire.yy",},},
     {"id":{"name":"sfx_player_slide","path":"sounds/sfx_player_slide/sfx_player_slide.yy",},},
     {"id":{"name":"sfx_player_walk_0","path":"sounds/sfx_player_walk_0/sfx_player_walk_0.yy",},},

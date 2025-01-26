@@ -1,5 +1,6 @@
 if room = rm_menu
 {
+	alarm[9] = 6;
 	if premuto_per_iniziare
 		scr_menuiniziale_step();
 	else
@@ -15,6 +16,7 @@ else if room = rm_game
 {
 	if !gameover
 	{
+		alarm[9] = 6;
 		alarm[4] = 180;
 		if !instance_exists(obj_bolla)
 			gameover = true;
@@ -31,7 +33,25 @@ else if room = rm_game
 			record[NumGiocatori] = floor(punteggio);
 			scr_send_score(nome,punteggio);
 			scr_record();
-		}	
+		}
+		
+		if sxPress
+				selegameover = 0;
+		else if dxPress
+			selegameover = 1;
+		
+		if confirmPress && selegameover = 0 && alarm[9] <= 0
+			{
+				partita_iniziando = true;
+				partitaReset();
+				room_restart();
+			}
+			else if (confirmPress && selegameover = 1)
+			{
+				partita_iniziando = false;
+				partitaReset();
+				room_goto(rm_menu);
+			}
 	}
 }
 
