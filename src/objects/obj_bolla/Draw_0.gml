@@ -7,7 +7,7 @@
 //draw_self()
 event_inherited();
 
-var _instabilita = get_instbilita_bolla(n_figli)
+var _instabilita = get_instbilita_bolla(n_figli, is_radice, is_first)
 _tremolio = get_tremolio(_instabilita)
 
 var _x = x + _tremolio

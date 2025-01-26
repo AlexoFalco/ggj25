@@ -201,11 +201,11 @@ if !con.pausato
 
 	state_vel_inpulse_shot = lerp(state_vel_inpulse_shot, 0, 0.02)
 	
-	if instance_number(obj_bolla) > 1 && n_figli = 0 && is_radice
+	if n_figli = 0 and is_radice and is_first == false
 		dest_count++;
 	else
 		dest_count = 0;
 
-	if dest_count > 300
+	if dest_count > 180
 		instance_destroy();
 }
