@@ -1,6 +1,6 @@
 function scr_menuiniziale_step(){
 
-if !menugiocatori && !impostazioni && !instance_exists(obj_highscore) && !riconoscimenti && !prima_registrazione
+if !menugiocatori && !impostazioni && !instance_exists(obj_highscore) && !riconoscimenti && !prima_registrazione && !tutorial
 {
 	if downPress
 	{
@@ -31,6 +31,9 @@ if !menugiocatori && !impostazioni && !instance_exists(obj_highscore) && !ricono
 				else
 					room_goto(rm_game);
 			}
+			break;
+			case MENUINIZIALE.HOWTOPLAY:
+				tutorial = true;
 			break;
 			case MENUINIZIALE.RECORD:
 				instance_create_depth(0,0,0,obj_highscore);
@@ -77,46 +80,58 @@ else if prima_registrazione
 	}
 }
 
+else if tutorial
+{
+	if (backPress || confirmPress || pausePress)
+		tutorial = false;
+}
+
 }
 
 function scr_menuiniziale_draw(){
 var _guix = display_get_gui_width(), _guiy = display_get_gui_height();
-if !menugiocatori && !impostazioni && !instance_exists(obj_highscore) && !riconoscimenti && !prima_registrazione
+if !menugiocatori && !impostazioni && !instance_exists(obj_highscore) && !riconoscimenti && !prima_registrazione && !tutorial
 {
-	var _inmen1, _inmen2, _inmen3, _inmen4, _inmen0;
+	var _inmen1, _inmen2, _inmen3, _inmen4, _inmen5, _inmen0;
 	switch selemenu
 	{
 		case MENUINIZIALE.GIOCA:
 		{
-			_inmen0 = c_red;	_inmen1 = c_white; _inmen2 = c_white; _inmen3 = c_white; _inmen4 = c_white;
+			_inmen0 = c_red;	_inmen1 = c_white; _inmen2 = c_white; _inmen3 = c_white; _inmen4 = c_white; _inmen5 = c_white;
 		}
 		break;
 		case MENUINIZIALE.RECORD:
 		{
-			_inmen1 = c_red;	_inmen0 = c_white; _inmen2 = c_white; _inmen3 = c_white; _inmen4 = c_white;
+			_inmen1 = c_red;	_inmen0 = c_white; _inmen2 = c_white; _inmen3 = c_white; _inmen4 = c_white; _inmen5 = c_white;
 		}
 		break;
 		case MENUINIZIALE.IMPOSTAZIONI:
 		{
-			_inmen2 = c_red;	_inmen1 = c_white; _inmen0 = c_white; _inmen3 = c_white; _inmen4 = c_white;
+			_inmen2 = c_red;	_inmen1 = c_white; _inmen0 = c_white; _inmen3 = c_white; _inmen4 = c_white; _inmen5 = c_white;
 		}
 		break;
 		case MENUINIZIALE.RICONOSCIMENTI:
 		{
-			_inmen3 = c_red;	_inmen1 = c_white; _inmen2 = c_white; _inmen0 = c_white; _inmen4 = c_white;
+			_inmen3 = c_red;	_inmen1 = c_white; _inmen2 = c_white; _inmen0 = c_white; _inmen4 = c_white; _inmen5 = c_white;
 		}
 		break;
 		case MENUINIZIALE.ESCI:
 		{
-			_inmen4 = c_red;	_inmen1 = c_white; _inmen2 = c_white; _inmen3 = c_white; _inmen0 = c_white;
+			_inmen4 = c_red;	_inmen1 = c_white; _inmen2 = c_white; _inmen3 = c_white; _inmen0 = c_white; _inmen5 = c_white;
 		}
 		break;	
+		case MENUINIZIALE.HOWTOPLAY:
+		{
+			_inmen4 = c_white;	_inmen1 = c_white; _inmen2 = c_white; _inmen3 = c_white; _inmen0 = c_white; _inmen5 = c_red;
+		}
+		break;
 	}
 	draw_text_border(_guix*15/16,90,fnt_base,"Play", "Gioca",_inmen0,,,,,fa_right);
-	draw_text_border(_guix*15/16,120,fnt_base,"Leaderboard", "Classifica",_inmen1,,,,,fa_right);
-	draw_text_border(_guix*15/16,150,fnt_base,"Settings", "Impostazioni",_inmen2,,,,,fa_right);
-	draw_text_border(_guix*15/16,180,fnt_base,"Credits", "Riconoscimenti",_inmen3,,,,,fa_right);
-	draw_text_border(_guix*15/16,210,fnt_base,"Exit game", "Esci dal gioco",_inmen4,,,,,fa_right);
+	draw_text_border(_guix*15/16,120,fnt_base,"How to Play", "Come si gioca",_inmen5,,,,,fa_right);
+	draw_text_border(_guix*15/16,150,fnt_base,"Leaderboard", "Classifica",_inmen1,,,,,fa_right);
+	draw_text_border(_guix*15/16,180,fnt_base,"Settings", "Impostazioni",_inmen2,,,,,fa_right);
+	draw_text_border(_guix*15/16,210,fnt_base,"Credits", "Riconoscimenti",_inmen3,,,,,fa_right);
+	draw_text_border(_guix*15/16,240,fnt_base,"Exit game", "Esci dal gioco",_inmen4,,,,,fa_right);
 }
 else if riconoscimenti
 {
@@ -126,7 +141,27 @@ else if prima_registrazione
 {
 	registrazione_draw();
 }
+else if tutorial
+{
+	tutorial_draw();	
+}
 
+}
+
+function tutorial_draw(){
+	
+	var _teng = @"Welcome to Gnàp!
+There are some bubbles in the sky. Press Z to shoot at them with your own bubbles: by doing so, you will create other bubbles onto them, and if you aim for the center, you will make big bubbles, and with big bubbles come big points!
+But watch out! There are bees that can pop your bubbles. Shoot them down... or up, with your bubbles. Bubbles can also pop if enough stress is put onto them, like having too many 'child' bubbles inside them.
+The games end when no bubbles are left.",
+	_tita = @"Benvenuto in Gnàp!
+Il cielo è popolato dalle bolle. Premi Z per sparare ad esse con le tue bolle: così facendo, creerai altre bolle al loro interno, e se miri al centro riuscirai a fare bolle grandi che danno punteggi alti! 
+Ma attenzione! Ci sono anche delle api che possono far scoppiare le tue bolle. Puoi farle andare via sparandole contro. Inoltre, le bolle possono scoppiare anche quando sono sottoposte a stress, come avere troppe bolle 'figlie' al proprio interno.
+Il gioco finisce quando tutte le bolle sono scoppiate.", 
+	_guix = display_get_gui_width(), _guiy = display_get_gui_height();
+
+	draw_text_border(_guix/2,_guiy*3/5,fnt_tutorial,_teng,_tita,,,,,500)
+	
 }
 
 function registrazione_draw(){

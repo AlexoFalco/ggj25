@@ -70,6 +70,7 @@ function scr_inizio_globale()
 			numgio = 1;
 			numgioselez = false;
 			riconoscimenti = false;
+			tutorial = false;
 		}
 		
 		{//menu di pausa
