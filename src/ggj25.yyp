@@ -104,6 +104,7 @@
     {"id":{"name":"spr_iconine","path":"sprites/spr_iconine/spr_iconine.yy",},},
     {"id":{"name":"spr_leaf","path":"sprites/spr_leaf/spr_leaf.yy",},},
     {"id":{"name":"spr_lingua","path":"sprites/spr_lingua/spr_lingua.yy",},},
+    {"id":{"name":"spr_menu_splashscreen","path":"sprites/spr_menu_splashscreen/spr_menu_splashscreen.yy",},},
     {"id":{"name":"spr_menu_title","path":"sprites/spr_menu_title/spr_menu_title.yy",},},
     {"id":{"name":"spr_player_fire","path":"sprites/spr_player_fire/spr_player_fire.yy",},},
     {"id":{"name":"spr_player_ripple","path":"sprites/spr_player_ripple/spr_player_ripple.yy",},},
