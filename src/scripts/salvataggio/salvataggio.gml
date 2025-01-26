@@ -32,9 +32,9 @@ function scr_carico(){
 	if file_exists("gnap.sav")
 	{
 		var _lbase = lang.eng, _nbase = "Name" + string(notset);
-		if versione = GM_version
+		if versione = "1.0.0.0"
 		{
-			_lbase = lang.ita;
+			//_lbase = lang.ita;
 			if test
 				_nbase = "Zigoon";
 			else

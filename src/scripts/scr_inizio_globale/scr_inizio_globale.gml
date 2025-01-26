@@ -11,7 +11,7 @@ function scr_inizio_globale()
 			eng,
 			ita
 		};
-		global.language = lang.ita;
+		global.language = lang.eng;
 	}
 
 	{//volume e mobile

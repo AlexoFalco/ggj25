@@ -54,7 +54,7 @@ else if impostazioni
 //}
 else if riconoscimenti
 {
-	if (backPress || confirmPress)
+	if (backPress || confirmPress || pausePress)
 		riconoscimenti = false;
 }
 else if instance_exists(obj_highscore)
@@ -71,6 +71,7 @@ else if prima_registrazione
 		{
 			scrivendo = false;
 			room_goto(rm_game);
+			prima_registrazione = false;
 		}
 			
 	}
@@ -270,6 +271,6 @@ function riconoscimenti_draw(){
 	
 	Fonts:
 	'Super Bubble' by fsuarez913
-	'Power Red & Green'",,,,0.5,,1000,fa_right);
+	'Power Red & Green'",,,,1,,1000,fa_right);
 	
 }
