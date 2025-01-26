@@ -17,13 +17,7 @@ function scr_get_scores(argument0) {
 		posizioni = 10;
 		
 	var _ng, b;
-	switch con.NumGiocatori
-	{
-		case 1: _ng = "&level=PSCA1"; b = "https://ftp.goldensun.altervista.org/PSCA1/display.php";  break;
-		case 2: _ng = "&level=PSCA2"; b = "https://ftp.goldensun.altervista.org/PSCA2/display.php";  break;
-		case 3: _ng = "&level=PSCA3"; b = "https://ftp.goldensun.altervista.org/PSCA3/display.php";  break;
-		case 4: _ng = "&level=PSCA4"; b = "https://ftp.goldensun.altervista.org/PSCA4/display.php";  break;
-	}
+	_ng = "&level=gnap"; b = "https://ftp.goldensun.altervista.org/gnap/display.php";
 	
 	var args = "name="+name+"&no_lines="+string(posizioni)+"&secret_key=t35vgvref565"+string(_ng);
 
