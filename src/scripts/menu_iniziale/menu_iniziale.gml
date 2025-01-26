@@ -30,8 +30,8 @@ if !menugiocatori && !impostazioni && !instance_exists(obj_highscore) && !ricono
 				}
 				else
 				{
+					//parte_audio(global.sfx,choose(sfx_gnap_zig, sfx_gnap_1, sfx_gnap_2, sfx_gnap_3, sfx_gnap_0),1,false,,5)
 					room_goto(rm_game);
-					parte_audio(global.sfx,choose(sfx_gnap_zig, sfx_gnap_1, sfx_gnap_2, sfx_gnap_3, sfx_gnap_0),1,false,,5)
 				}
 			}
 			break;
@@ -76,7 +76,7 @@ else if prima_registrazione
 		if pausePress && keyboard_string != ""
 		{
 			scrivendo = false;
-			parte_audio(global.sfx,choose(sfx_gnap_zig, sfx_gnap_1, sfx_gnap_2, sfx_gnap_3, sfx_gnap_0),1,false,,5)
+			
 			room_goto(rm_game);
 			prima_registrazione = false;
 		}
