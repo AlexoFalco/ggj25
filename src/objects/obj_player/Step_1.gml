@@ -1,1 +1,1 @@
-scr_comandi();
+scr_comandi(0);
