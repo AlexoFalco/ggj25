@@ -111,11 +111,11 @@ if !menugiocatori && !impostazioni && !instance_exists(obj_highscore) && !ricono
 		}
 		break;	
 	}
-	draw_text_border(_guix/2,90,fnt_base,"Play", "Gioca",_inmen0);
-	draw_text_border(_guix/2,120,fnt_base,"Leaderboard", "Classifica",_inmen1);
-	draw_text_border(_guix/2,150,fnt_base,"Settings", "Impostazioni",_inmen2);
-	draw_text_border(_guix/2,180,fnt_base,"Credits", "Riconoscimenti",_inmen3);
-	draw_text_border(_guix/2,210,fnt_base,"Exit game", "Esci dal gioco",_inmen4);
+	draw_text_border(_guix*15/16,90,fnt_base,"Play", "Gioca",_inmen0,,,,,fa_right);
+	draw_text_border(_guix*15/16,120,fnt_base,"Leaderboard", "Classifica",_inmen1,,,,,fa_right);
+	draw_text_border(_guix*15/16,150,fnt_base,"Settings", "Impostazioni",_inmen2,,,,,fa_right);
+	draw_text_border(_guix*15/16,180,fnt_base,"Credits", "Riconoscimenti",_inmen3,,,,,fa_right);
+	draw_text_border(_guix*15/16,210,fnt_base,"Exit game", "Esci dal gioco",_inmen4,,,,,fa_right);
 }
 else if riconoscimenti
 {
@@ -261,7 +261,7 @@ function menu_giocatori_step()
 
 function riconoscimenti_draw(){
 	var _guix = display_get_gui_width(), _guiy = display_get_gui_height();
-	draw_text_border(_guix/2,_guiy/2,fnt_base,
+	draw_text_border(_guix*15/16,_guiy/2,fnt_base,
 	@"Developers: 
 	MyMadnessWorks (Ivan Zanotti)
 	AlexoFalco (Alessandro Falconi)
@@ -270,6 +270,6 @@ function riconoscimenti_draw(){
 	
 	Fonts:
 	'Super Bubble' by fsuarez913
-	'Power Red & Green'",,,,0.5,,1000);
+	'Power Red & Green'",,,,0.5,,1000,fa_right);
 	
 }

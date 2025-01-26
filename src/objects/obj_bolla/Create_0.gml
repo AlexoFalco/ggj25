@@ -1,4 +1,6 @@
 /// @description 
+con = obj_control;
+
 raggio = 4;
 figli = [];
 n_figli = 0;

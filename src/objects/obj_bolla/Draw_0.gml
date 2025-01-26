@@ -5,10 +5,10 @@
 //draw_sprite_ext(sprite_index, image_index, x,y,image_xscale, image_yscale, image_angle, image_blend, 0.1)
 
 //draw_self()
+event_inherited();
 
 var _instabilita = get_instbilita_bolla(n_figli)
 _tremolio = get_tremolio(_instabilita)
-show_debug_message(_tremolio)
 
 var _x = x + _tremolio
 var _y = y;
@@ -26,7 +26,8 @@ color_fill_out[2] = #FF9393
 
 color_fill_in_current = color_fill_in[_instabilita]
 color_fill_out_current = color_fill_out[_instabilita]
-var raggio_to_draw = raggio;// + 0.5 * dsin(current_time * _instabilita)
+
+var raggio_to_draw = raggio
 
 draw_set_alpha(0.3);
 draw_circle_color(_x,_y,raggio_to_draw,color_fill_in_current,color_fill_out_current,false);

@@ -1,4 +1,5 @@
-/// @description 
+/// @description
+con = obj_control;
 speed = 2
 
 direction = 90
