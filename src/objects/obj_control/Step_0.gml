@@ -25,6 +25,19 @@ else if room = rm_game
 		{
 			pausato = true;
 		}
+		
+		if !con.pausato
+		{
+			timer_foglie = alarm[2];
+			timer_api = alarm[1];
+			timer_vento = alarm[0];
+		}
+		else
+		{
+			alarm[2] = timer_foglie;
+			alarm[1] = timer_api;
+			alarm[0] = timer_vento;
+		}
 	}
 	else
 	{
