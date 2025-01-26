@@ -46,6 +46,8 @@ if global.sndvol > 0
   {
     global.sndvol -= (1/global.tacchevol);  
   }
+  
+  audio_sound_gain(global.snd,global.sndvol,50);
 }
 
 function abbassa_effetti(){
@@ -60,6 +62,8 @@ if global.sndvol < 1
   {
     global.sndvol+= (1/global.tacchevol);  
   }
+  
+  audio_sound_gain(global.snd,global.sndvol,50);
 }
 
 function alza_effetti(){
