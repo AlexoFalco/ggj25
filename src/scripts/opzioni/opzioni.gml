@@ -77,6 +77,10 @@ function menu_pausa_draw(){
 		case 3: {_colsel1 = c_white; _colsel2 = c_white; _colsel3 = c_red; _colsel0 = c_white;} break;
 	}
 	
+	draw_set_alpha(0.7);
+	draw_rectangle_color(_guix/2-100,_guiy/2-55,_guix/2+100,_guiy/2+115,#FFA3F5,#CCF9FF,#FFA3F5,#CCF9FF,false);
+	draw_set_alpha(1);
+	draw_rectangle_color(_guix/2-100,_guiy/2-55,_guix/2+100,_guiy/2+115,c_black,c_black,c_black,c_black,true);
 	
 	draw_text_border(_guix/2,	_guiy*3/8,	fnt_base,	"CONTINUE",	"CONTINUA",		_colsel0);
 	draw_text_border(_guix/2,	_guiy*4/8,	fnt_base,	"RESTART",	"RICOMINCIA",	_colsel1);
@@ -116,8 +120,8 @@ function scr_impostazioni_step()
 		else if sxPress
 		{
 			selimpostazioni--;
-			if selimpostazioni > IMPOST.FATTO
-				selimpostazioni = IMPOST.MUSICA;
+			if selimpostazioni < IMPOST.MUSICA
+				selimpostazioni = IMPOST.FATTO;
 		}
 		
 		selimpostazioni = selimpostazioni+IMPOST.FATTO mod IMPOST.FATTO;
@@ -201,12 +205,13 @@ function scr_impostazioni_draw()
 	var _guix = display_get_gui_width(), _guiy = display_get_gui_height(),
 	_sel1 = c_white, _sel2= c_white, _sel3= c_white, _sel4= c_white, _sel0 = c_white, _sel5= c_white, 
 	_sel6= c_white, _sel7= c_white, bandiera, 
-	_aiue, _aiui, _colai = c_green, _colnome = c_white, _fse, _fsi, _colfs = c_red;;
+	_aiue, _aiui, _colai = c_green, _colnome = c_white, _fse, _fsi, _colfs = c_red;
+	
 	
 	draw_set_alpha(0.5);
-	draw_rectangle_color(20,20,_guix-20,_guiy-60,c_green,c_aqua,c_green,c_aqua,false);
+	draw_rectangle_color(90,20,_guix-90,_guiy-60,#FFA3F5,#CCF9FF,#FFA3F5,#CCF9FF,false);
 	draw_set_alpha(1);
-	draw_rectangle_color(20,20,_guix-20,_guiy-60,c_black,c_black,c_black,c_black,true);
+	draw_rectangle_color(90,20,_guix-90,_guiy-60,c_black,c_black,c_black,c_black,true);
 	
 	disegna_musica(_guix/3-90,70,130);
 	
