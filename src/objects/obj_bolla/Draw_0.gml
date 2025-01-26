@@ -38,6 +38,7 @@ draw_set_color(color_shadow)
 draw_circle(_x-1,_y-1,raggio_to_draw, 0)
 draw_set_alpha(1)
 
+
 //--| VECCHIO CODICE CHE RAPPRESENTA LA BOLLA COME DRAW_CIRCLE, SOSTITUITO DALLO SPRITE |--
 //var surface_size = raggio*2+2
 //if (surface_ref != noone and surface_exists(surface_ref) == true)
@@ -66,3 +67,6 @@ if (raggio > 3)
 {
 	draw_sprite_ext(spr_bolla_riflesso, 0, _x+lengthdir_x(raggio_to_draw*0.8-3, 45), _y+lengthdir_y(raggio_to_draw*0.8-3, 45), 1, 1, 0, c_white, 0.5)
 }
+
+
+
