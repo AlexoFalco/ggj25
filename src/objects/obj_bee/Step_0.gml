@@ -2,7 +2,7 @@ if !con.pausato
 {
 	if !bollato
 	{
-		hSp = random_range(0.5, 1.5)*dir;
+		hSp = constant_move_speed*dir;
 		vSp = 0;
 	}
 	else

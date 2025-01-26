@@ -9,7 +9,7 @@ alberobolle.is_radice = true
 create_bolla = function(_parent, _x, _y)
 {
 	var _new_depth = _parent.depth-1
-	obj_control.punteggio += 100;
+	obj_control.punteggio_add(100);
 	var proiett = instance_create_depth(_x, _y, _new_depth, obj_bolla)
 	_parent.set_shot_inpulse() 
 	array_push(_parent.figli, proiett);

@@ -57,7 +57,14 @@ inputMagnitude = (horMov != 0);
 //	}
 //}
 if !con.pausato && !con.gameover
+{
 	script_execute(playerStato);
+}
+else
+{
+	image_index = spr_player
+	image_speed = 0
+}	
 
 
 //with obj_camera
