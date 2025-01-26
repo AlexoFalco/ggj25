@@ -41,12 +41,9 @@ else if room = rm_game
 	}
 	else
 	{
-		if floor(punteggio) > record[NumGiocatori]
-		{
 			record[NumGiocatori] = floor(punteggio);
 			scr_send_score(nome,punteggio);
 			scr_record();
-		}
 		
 		if sxPress
 				selegameover = 0;

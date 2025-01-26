@@ -18,7 +18,7 @@ function scr_send_score(name, sscore) {
 			break;
 	}
 	var encname = url_encode(base64_encode(string(name)));
-	var key = sha1_string_utf8(string(sscore)+","+string(os)+","+string("gnap")+"13244ff8");
+	var key = sha1_string_utf8(string(sscore)+","+string(os)+","+string("CBE")+"13244ff8");
 
 	var _ng, b;
 	 _ng = "&level=gnap"; b = "https://ftp.goldensun.altervista.org/gnap/sendscore.php";
