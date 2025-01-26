@@ -58,6 +58,10 @@ inputMagnitude = (horMov != 0);
 //}
 if !con.pausato && !con.gameover
 {
+	if global.time > 0
+		global.time--;
+	if global.time <= 0
+		obj_control.gameover = true;
 	script_execute(playerStato);
 }
 else
