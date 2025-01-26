@@ -43,3 +43,6 @@ if room != rm_game || (room = rm_game && gameover)
 		//alarm[2] = 240; //foglia
 	}
 }
+
+if !impostazioni
+	selimpostazioni = IMPOST.MUSICA;

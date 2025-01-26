@@ -8,7 +8,7 @@ if room = rm_menu
 	draw_sprite_ext(spr_menu_title, 0, _x_center,_y_center, _scale, _scale, _title_rot, c_white, 1)
 	//draw_text_border(display_get_gui_width()/2,display_get_gui_height()/3,fnt_bubble,"GNÀP",,#FFA3F5,#CCF9FF,2,2);
 	if !premuto_per_iniziare
-		draw_text_border(display_get_gui_width()/2,display_get_gui_height()*2/3,fnt_base,"Press Enter to start", "Premi Invio per iniziare",c_white,c_black,,,,fa_center,fa_middle);
+		draw_text_border(display_get_gui_width()/2,display_get_gui_height()*2/3,fnt_base,"Press Z or Enter to start", "Premi Z o Invio per iniziare",c_white,c_black,,,,fa_center,fa_middle);
 	else
 	{
 		if !impostazioni && !instance_exists(obj_highscore) //&& !menugiocatori
@@ -43,3 +43,5 @@ else
 	draw_text_border(display_get_gui_width()*15/16,display_get_gui_height()/16,fnt_base,$"{punteggio}", $"{punteggio}")
 	//debug_text($"{gameover}",display_get_gui_width()/2,display_get_gui_height()/2);
 }
+
+//debug_text($"{global.language}",display_get_gui_width()/2,display_get_gui_height()/2);
