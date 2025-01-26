@@ -20,7 +20,9 @@ else if room = rm_game
 			gameover = true;
 			
 		if pausePress && !pausato
+		{
 			pausato = true;
+		}
 	}
 	else
 	{
