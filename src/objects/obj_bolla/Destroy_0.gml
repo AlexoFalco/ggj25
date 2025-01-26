@@ -11,15 +11,15 @@ with obj_bolla
 	}
 }
 
+var n_figli = array_length(figli)
+var i;
+for (i = 0; i < n_figli; i+=1)
+{
+	figli[i].is_radice = true;
+	figli[i].state_angle_impulse_shot = point_direction(other.x, other.y, x,y)
+	figli[i].state_vel_inpulse_shot += constant_inpulse_shot;
+}
 
-	var n_figli = array_length(figli)
-	var i;
-	for (i = 0; i < n_figli; i+=1)
-	{
-		figli[i].is_radice = true;
-		figli[i].state_angle_impulse_shot = point_direction(other.x, other.y, x,y)
-		figli[i].state_vel_inpulse_shot += constant_inpulse_shot;
-	}
 if !is_radice
 {
 	with obj_bolla
@@ -31,3 +31,4 @@ if !is_radice
 			instance_destroy();
 		}
 	}
+}
