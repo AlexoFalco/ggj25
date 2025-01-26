@@ -17,3 +17,9 @@ create_bolla = function(_parent, _x, _y)
 	_parent.set_random_bounce(1)
 	return proiett;
 }
+
+punteggio_add = function(_punteggio, low = true)
+{
+    punteggio += _punteggio
+    parte_audio(global.sfx,low ? sfx_score_add_low : sfx_score_add_high, 1, false);
+}
