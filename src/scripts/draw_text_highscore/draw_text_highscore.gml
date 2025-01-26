@@ -78,11 +78,11 @@ function draw_text_highscore(xx, yy, str, name, colour) {
 	    draw_set_alpha(0.7)
 	    if (name == str3b[i])
 	    {
-	        draw_set_colour($5B65CC);
+	        draw_set_colour(#FFA3F5);
 	    }
 	    else
 	    {
-	        draw_set_colour($C9FF9E);
+	        draw_set_colour(#CCF9FF);
 	    }
 	    draw_rectangle(40, yy+height-(h/2)-2,display_get_gui_width()-40, yy+height+(h/2)-4, false)
 		

@@ -31,21 +31,40 @@ draw_text_border(display_get_gui_width()-10,display_get_gui_height()*15/16,fnt_b
 }
 else
 {
-	if pausato
+	if !gameover
 	{
-		scr_menu_pausa_step();
-		if !impostazioni
+		if pausato
 		{
-			menu_pausa_draw();
+			scr_menu_pausa_step();
+			if !impostazioni
+			{
+				menu_pausa_draw();
+			}
+			else
+			{
+				scr_impostazioni_draw();
+			}
 		}
-		else
-		{
-			scr_impostazioni_draw();
-		}
-	}
 	
-	draw_text_border(display_get_gui_width()*15/16,display_get_gui_height()/16,fnt_base,$"{punteggio}", $"{punteggio}")
-	//debug_text($"{gameover}",display_get_gui_width()/2,display_get_gui_height()/2);
+		draw_text_border(display_get_gui_width()*15/16,display_get_gui_height()/16,fnt_base,$"{punteggio}", $"{punteggio}")
+		//debug_text($"{gameover}",display_get_gui_width()/2,display_get_gui_height()/2);
+	}
+	else
+	{
+		if !instance_exists(obj_highscore)
+			draw_text_border(display_get_gui_width()/2, display_get_gui_height()/2-50,fnt_base,"GAME OVER",,#CCF9FF,#FFA3F5,4);
+		var _gopt, _gopty = display_get_gui_height()-50, _LNG = 70;
+		if selegameover = 0
+			_gopt = display_get_gui_width()/3-_LNG;
+		else if selegameover = 1
+			_gopt = 2*display_get_gui_width()/3-_LNG;
+		
+		draw_text_border(display_get_gui_width()/3,display_get_gui_height()-50,fnt_base,"TRY AGAIN", "RICOMINCIA");
+		draw_text_border(2*display_get_gui_width()/3,display_get_gui_height()-50,fnt_base,"EXIT", "ABBANDONA");
+		
+		draw_set_color(c_red);
+		draw_rectangle(_gopt,_gopty,_gopt+_LNG*2,_gopty+20,true);
+	}
 }
 
-//debug_text($"{global.language}",display_get_gui_width()/2,display_get_gui_height()/2);
+//debug_text($"{alarm[9]}",display_get_gui_width()/2,display_get_gui_height()/2);

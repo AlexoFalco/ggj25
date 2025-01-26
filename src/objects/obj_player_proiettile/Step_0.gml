@@ -1,3 +1,4 @@
+
 if !con.pausato
 {
 	speed = 2;
@@ -54,6 +55,7 @@ if !con.pausato
 		}
 	}
 }
+
 
 with obj_enemy
 {

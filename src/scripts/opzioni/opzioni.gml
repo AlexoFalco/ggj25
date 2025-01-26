@@ -189,9 +189,15 @@ function scr_impostazioni_step()
 	else if regola_sfx
 	{
 		if sxPress
+		{
 			abbassa_effetti();
+			parte_audio(global.sfx,sfx_bubble_pop,1,false);
+		}
 		else if dxPress
+		{
 			alza_effetti();
+			parte_audio(global.sfx,sfx_bubble_pop,1,false);
+		}
 		if confirmPress
 		{
 			scr_salva_volume();
