@@ -1,7 +1,7 @@
 /// @description 
 image_xscale = raggio/8;
 image_yscale = raggio/8;
-var n_figli = array_length(figli)
+n_figli = array_length(figli)
 var i;
 
 if (n_figli > 4)
