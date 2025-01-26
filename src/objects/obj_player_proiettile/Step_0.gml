@@ -53,11 +53,11 @@ if !con.pausato
 			instance_destroy()
 		}
 	}
-
+}
 
 with obj_enemy
 {
-	if place_meeting(x,y,other) && !bollato
+	if (place_meeting(x,y,other) and !bollato)
 	{
 		obj_control.punteggio += 500
 		instance_create_depth(x,y,depth-1, obj_bolla_wrap)
