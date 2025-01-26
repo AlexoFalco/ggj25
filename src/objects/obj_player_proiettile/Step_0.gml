@@ -61,7 +61,7 @@ with obj_enemy
 {
 	if (place_meeting(x,y,other) and !bollato)
 	{
-		obj_control.punteggio += 500
+		obj_control.punteggio_add(500, false)
 		instance_create_depth(x,y,depth-1, obj_bolla_wrap)
 		instance_destroy(other);
 		instance_destroy();
