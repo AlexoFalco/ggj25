@@ -1,6 +1,11 @@
 if !con.pausato
 {
-	if !bollato
+	if pungendo
+	{
+		hSp = 0;
+		vSp = 0;
+	}
+	else if !bollato
 	{
 		hSp = constant_move_speed*dir;
 		vSp = 0;
@@ -24,5 +29,16 @@ if !con.pausato
 	{
 		if x > obj_camera.xmax+30
 			instance_destroy();
+	}
+	if !pungendo
+	{
+		with instance_place(x,y,obj_bolla)
+		{
+			if is_radice
+			{
+				instance_destroy()
+				other.pungendo = true;
+			}
+		}
 	}
 }
