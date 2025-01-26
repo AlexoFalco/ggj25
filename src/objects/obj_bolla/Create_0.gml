@@ -21,7 +21,7 @@ rotazione_vel = 0.3
 raggio_incremento_passivo = 0.005
 is_radice = false
 is_first = false
-
+my_inception = 0;
 
 
 bounce_strong = 0

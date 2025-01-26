@@ -58,6 +58,10 @@ inputMagnitude = (horMov != 0);
 //}
 if !con.pausato && !con.gameover
 {
+	if global.time > 0
+		global.time--;
+	if global.time <= 0
+		obj_control.gameover = true;
 	script_execute(playerStato);
 }
 else
@@ -66,6 +70,8 @@ else
 	image_speed = 0
 }	
 
+
+x = clamp(x, obj_camera.xmin, obj_camera.xmax);
 
 //with obj_camera
 //	other.x = clamp(other.x,xmin+10,xmax-10);

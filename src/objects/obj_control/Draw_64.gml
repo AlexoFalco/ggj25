@@ -47,6 +47,11 @@ else
 		}
 	
 		draw_text_border(display_get_gui_width()*15/16,display_get_gui_height()/16,fnt_base,$"{punteggio}", $"{punteggio}")
+		var tsec = (global.time mod (60*60)) div 60;
+		var tmin = global.time div (60*60);
+		
+		draw_text_border(display_get_gui_width()*1/16,display_get_gui_height()/16,fnt_base,$"{tmin}:{tsec}")
+		
 		//debug_text($"{gameover}",display_get_gui_width()/2,display_get_gui_height()/2);
 	}
 	else
