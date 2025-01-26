@@ -32,7 +32,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"ggj25",
   "resources":[
@@ -40,6 +40,7 @@
     {"id":{"name":"ac_bolla_raggiorandom","path":"animcurves/ac_bolla_raggiorandom/ac_bolla_raggiorandom.yy",},},
     {"id":{"name":"fnt_base","path":"fonts/fnt_base/fnt_base.yy",},},
     {"id":{"name":"fnt_bubble","path":"fonts/fnt_bubble/fnt_bubble.yy",},},
+    {"id":{"name":"fnt_tutorial","path":"fonts/fnt_tutorial/fnt_tutorial.yy",},},
     {"id":{"name":"obj_bee","path":"objects/obj_bee/obj_bee.yy",},},
     {"id":{"name":"obj_bolla_gocce","path":"objects/obj_bolla_gocce/obj_bolla_gocce.yy",},},
     {"id":{"name":"obj_bolla_wrap","path":"objects/obj_bolla_wrap/obj_bolla_wrap.yy",},},
