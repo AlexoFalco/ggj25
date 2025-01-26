@@ -168,7 +168,7 @@ if (is_radice)
 		bounce_strong = sign(bounce_strong) * lerp(abs(bounce_strong), 0, 0.05)
 	}
 	
-	var camera_ymin = camera_get_view_y(view_camera[0])
+	//var camera_ymin = camera_get_view_y(view_camera[0])
 	if (x > obj_camera.xmax-20)
 	{
 		bounce_strong-=constant_bounce_strong
@@ -177,7 +177,7 @@ if (is_radice)
 	{
 		bounce_strong+=constant_bounce_strong
 	}
-	if (y < camera_ymin+10)
+	if (y < global.soffitto+10)
 	{
 		state_vel_inpulse_shot = 0
 	}
@@ -187,7 +187,7 @@ if (is_radice)
 	x += lengthdir_x(state_vel_inpulse_shot, state_angle_impulse_shot)
 		 + sin(current_time/2000)/10 + bounce_strong
 	
-	y = clamp(y, camera_ymin, global.terreno - raggio)
+	y = clamp(y, global.soffitto + raggio, global.terreno - raggio)
 	x = clamp(x, obj_camera.xmin, obj_camera.xmax)
 	
 }
@@ -195,3 +195,11 @@ if (is_radice)
 rotazione += rotazione_vel * n_figli
 
 state_vel_inpulse_shot = lerp(state_vel_inpulse_shot, 0, 0.02)
+
+if instance_number(obj_bolla) > 1 && n_figli = 0 && is_radice
+	dest_count++;
+else
+	dest_count = 0;
+
+if dest_count > 300
+	instance_destroy();

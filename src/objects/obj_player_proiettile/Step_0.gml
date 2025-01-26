@@ -32,7 +32,7 @@ if (is_coll and _best_bolla == noone)
 }
 
 
-if (_best_bolla != noone)
+if instance_exists(_best_bolla)
 {
 	move_towards_point(_best_bolla.x, _best_bolla.y, 2)
 	if (point_distance(x,y,_best_bolla.x,_best_bolla.y) < _best_bolla.raggio*2)

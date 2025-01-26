@@ -20,15 +20,24 @@ with obj_bolla
 	}
 }
 
-	if raggiomax < 40
-		gosz = 320;
-	else
-		gosz = raggiomax * 6;
-		
-	if ymin-20 < camera_get_view_y(view_camera)
+	if raggiomax < 30
 	{
-		gosz = max(gosz, (camera_get_view_y(view_camera)+camera_get_view_height(view_camera)-ymin)/180*320);
+		gosz = 320;
+		if ymin > global.soffitto
+			global.soffitto = min(ymin, camera_get_view_y(view_camera)+camera_get_view_height(view_camera)-180);
 	}
+	else
+	{
+		gosz = raggiomax * 6;
+		global.soffitto = min(ymin, camera_get_view_y(view_camera)+camera_get_view_height(view_camera)-(gosz/180*320));
+	}
+		
+		if ymin-20 < camera_get_view_y(view_camera)
+		{
+			gosz = max(gosz, (camera_get_view_y(view_camera)+camera_get_view_height(view_camera)-ymin)/180*320);
+		}
+		
+	global.soffitto = max(global.soffitto, camera_get_view_y(view_camera));
 
 //xmin = max(xmin, 320/2)
 //xmax = min(xmax, room_width-320/2)

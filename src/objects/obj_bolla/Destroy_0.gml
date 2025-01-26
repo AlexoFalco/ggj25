@@ -2,15 +2,6 @@
 parte_audio(global.sfx,sfx_bubble_pop,1,false);
 parte_audio(global.sfx,sfx_bubble_add_wrong,1,false);
 
-with obj_bolla
-{	
-	var numfiglio = array_get_index(figli, other.id)
-	if numfiglio != -1
-	{
-		array_delete(figli, numfiglio, 1)
-	}
-}
-
 var n_figli = array_length(figli)
 var i;
 for (i = 0; i < n_figli; i+=1)
