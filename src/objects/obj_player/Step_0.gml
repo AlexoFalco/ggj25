@@ -67,6 +67,8 @@ else
 }	
 
 
+x = clamp(x, obj_camera.xmin, obj_camera.xmax);
+
 //with obj_camera
 //	other.x = clamp(other.x,xmin+10,xmax-10);
 
