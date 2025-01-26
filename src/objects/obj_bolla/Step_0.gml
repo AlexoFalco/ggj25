@@ -4,6 +4,11 @@ image_yscale = raggio/8;
 n_figli = array_length(figli)
 var i;
 
+if is_radice
+{
+	my_inception = 0;
+}
+
 if !con.pausato
 {
 	if (n_figli > 4)
@@ -113,7 +118,7 @@ if !con.pausato
 		var figlio = figli[i];	
 		var fratello1 = i > 1 ? figli[(i + 1) mod n_figli] : noone
 		var fratello2 = i > 2 ? figli[(i + 2) mod n_figli] : noone
-	
+		figlio.my_inception = my_inception+1;
 		var distanzarandom_norm = rotazione/360
 		var distanzarandom = (margine-1) * ac_get_curve_value(ac_bolla_raggiorandom, distanzarandom_norm)
 		
