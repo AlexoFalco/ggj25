@@ -32,7 +32,7 @@ function scr_carico(){
 	if file_exists("gnap.sav")
 	{
 		var _lbase = lang.eng, _nbase = "Name" + string(notset);
-		if versione = "0.0.0"
+		if versione = GM_version
 		{
 			_lbase = lang.ita;
 			if test

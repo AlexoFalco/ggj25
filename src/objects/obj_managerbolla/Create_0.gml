@@ -13,5 +13,6 @@ create_bolla = function(_parent, _x, _y)
 	var proiett = instance_create_depth(_x, _y, _new_depth, obj_bolla)
 	_parent.set_shot_inpulse() 
 	array_push(_parent.figli, proiett);
+	_parent.set_random_bounce(1)
 	return proiett;
 }

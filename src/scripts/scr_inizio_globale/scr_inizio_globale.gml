@@ -2,7 +2,7 @@ function scr_inizio_globale()
 {
 	randomize();
 	test = false;
-	versione = "0.0.0";
+	versione = GM_version;
 	con = obj_control;
 	
 	{//lingua

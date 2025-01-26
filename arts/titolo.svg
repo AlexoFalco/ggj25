@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+   sodipodi:docname="titolo.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="1.0444209"
+     inkscape:cx="198.19595"
+     inkscape:cy="352.34836"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Livello 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <text
+       xml:space="preserve"
+       style="font-size:3.175px;font-family:super;-inkscape-font-specification:super;fill:#453f41;stroke:#524b4d;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.1;paint-order:fill markers stroke;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+       x="57.322075"
+       y="114.28588"
+       id="text236"><tspan
+         sodipodi:role="line"
+         id="tspan234"
+         style="stroke-width:0;-inkscape-font-specification:super;font-family:super;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal"
+         x="57.322075"
+         y="114.28588" /></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.9333px;font-family:'Super Bubble';-inkscape-font-specification:'Super Bubble';fill:#ffa3f5;fill-opacity:1;stroke:#ccf9ff;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.1;stroke-dasharray:none;stroke-opacity:1;paint-order:fill markers stroke"
+       x="62.104881"
+       y="68.851051"
+       id="text240"
+       inkscape:export-filename="titolo1.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"><tspan
+         sodipodi:role="line"
+         id="tspan238"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:16.9333px;font-family:'Super Bubble';-inkscape-font-specification:'Super Bubble';fill:#ffa3f5;fill-opacity:1;stroke:#ccf9ff;stroke-width:0.529167;stroke-dasharray:none;stroke-opacity:1"
+         x="62.104881"
+         y="68.851051">gnàp</tspan></text>
+  </g>
+</svg>

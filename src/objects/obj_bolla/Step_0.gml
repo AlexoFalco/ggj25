@@ -7,8 +7,17 @@ var i;
 if (n_figli > 4)
 {
 	instance_destroy(figli[4]);
+	for(var i=0;i<3;i+=1)
+	{
+		figli[i].set_random_bounce(2)
+	}
 	instance_destroy();
 	return;
+}
+
+if (place_meeting(x,y,obj_player))
+{
+	uccididiscendenza = true
 }
 if y+raggio >= global.terreno
 {

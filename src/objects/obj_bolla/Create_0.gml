@@ -26,6 +26,11 @@ mediana_centro_figli = 0
 uccididiscendenza = false;
 _call = noone;
 
+set_random_bounce = function(_max)
+{
+	bounce_strong = random(_max) * choose(-1,1)
+}
+
 set_shot_inpulse = function()
 {
 	var parent = noone;

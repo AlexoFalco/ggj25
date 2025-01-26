@@ -38,4 +38,4 @@ switch blowStrength
 	break;
 }
 
-draw_text_border(display_get_gui_width()/2,display_get_gui_height()/8,fnt_base,$"{_windeng} wind from {_direng}", $"Vento {_windita} da {_dirita}",c_white);
+//draw_text_border(display_get_gui_width()/2,display_get_gui_height()/8,fnt_base,$"{_windeng} wind from {_direng}", $"Vento {_windita} da {_dirita}",c_white);

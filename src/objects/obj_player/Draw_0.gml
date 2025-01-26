@@ -1,6 +1,8 @@
 
-draw_set_color(c_black)
-draw_line(x,y,x,y-200)
-
+if (global.is_debug)
+{
+	draw_set_color(c_black)
+	draw_line(x,y,x,y-200)
+}
 draw_self();
 //debug_text($"{player}");
