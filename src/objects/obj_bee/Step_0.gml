@@ -2,7 +2,7 @@ if !con.pausato
 {
 	if !bollato
 	{
-		hSp = 2*dir;
+		hSp = random_range(0.5, 1)*dir;
 		vSp = 0;
 	}
 	else
@@ -12,6 +12,8 @@ if !con.pausato
 	}
 	x += hSp;
 	y += vSp;
+	
+	image_xscale = sign(hSp)
 
 	if dir = -1
 	{
