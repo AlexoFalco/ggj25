@@ -20,6 +20,7 @@ state_tremolio = 0
 rotazione_vel = 0.3
 raggio_incremento_passivo = 0.005
 is_radice = false
+is_first = false
 
 
 
@@ -55,11 +56,12 @@ set_shot_inpulse = function()
 		parent.set_shot_inpulse();
 }
 
-get_instbilita_bolla = function(_n_figli)
+get_instbilita_bolla = function(_n_figli, _is_radice, is_first)
 {
-	//0: stabile, nessun effetto (con figli pari a 0, 1, 2)
+	//0: stabile, nessun effetto (con figli pari a 1, 2)
 	//1: poco stabile, lieve effetto (con figli pari a 3)
-	//2: instabile prossima all'esplosione, effetto marcato(con figli pari a 4)
+	//2: instabile prossima all'esplosione, effetto marcato(con figli pari a 0, 4)
+	if (_n_figli == 0 and _is_radice and !is_first) return 2
 	var _k = _n_figli <=2 ? 0 : (_n_figli-2);
 	return _k;
 }
