@@ -48,8 +48,11 @@ if !con.pausato
 
 	gosz = clamp(gosz, 320, 640);
 
-	xmax = room_width/2 + gosz/2-10;
-	xmin = room_width/2 - gosz/2+10;
+	//xmax = room_width/2 + gosz/2-10;
+	//xmin = room_width/2 - gosz/2+10;
+	
+	xmax = camera_get_view_x(view_camera[0]) +camera_get_view_width(view_camera[0])-10
+	xmin = camera_get_view_x(view_camera[0])+10
 
 
 
