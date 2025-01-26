@@ -21,7 +21,7 @@ function scr_send_score(name, sscore) {
 	var key = sha1_string_utf8(string(sscore)+","+string(os)+","+string("gnap")+"13244ff8");
 
 	var _ng, b;
-	 _ng = "&level=PSCA1"; b = "https://ftp.goldensun.altervista.org/gnap/sendscore.php";
+	 _ng = "&level=gnap"; b = "https://ftp.goldensun.altervista.org/gnap/sendscore.php";
 	 
 	var args = "name="+encname+"&score="+string(sscore)+"&color="+string(os)+"&secret_key="+string(key)+string(_ng);
 	var map = ds_map_create();
