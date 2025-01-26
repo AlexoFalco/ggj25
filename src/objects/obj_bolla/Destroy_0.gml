@@ -26,3 +26,15 @@ if !is_radice
 		}
 	}
 }
+
+for (var i=0; i<floor(raggio)/4; i++)
+{
+	var _dir = irandom_range(10, 170);
+	var _xx = x+lengthdir_x(raggio/2, _dir);
+	var _yy = y+lengthdir_y(raggio/2, _dir);
+	
+	instance_create_depth(_xx, _yy,	depth-1, obj_effect_bolla_tear,
+	{
+		direction : _dir
+	}); 
+}

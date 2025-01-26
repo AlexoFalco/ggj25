@@ -1,7 +1,7 @@
 
 if !con.pausato
 {
-	speed = 2;
+	speed = 4;
 	var is_coll = place_meeting(x, y, obj_bolla)
 	if (is_coll and _best_bolla == noone)
 	{

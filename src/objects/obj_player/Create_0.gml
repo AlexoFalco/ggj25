@@ -67,3 +67,5 @@ setShot = function()
 
 
 snd_iswalking = false;
+
+instance_create_depth(x, y, depth+1, obj_aim);
