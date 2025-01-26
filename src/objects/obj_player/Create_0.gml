@@ -1,5 +1,5 @@
 con = obj_control;
-//player = con.playerbirth;
+player = con.playerbirth;
 horMov = 0;	
 verMov = 0;
 dir = 1
