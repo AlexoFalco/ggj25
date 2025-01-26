@@ -22,7 +22,7 @@ if !menugiocatori && !impostazioni && !instance_exists(obj_highscore) && !ricono
 		{
 			case MENUINIZIALE.GIOCA:
 			{
-				if !file_exists("gnap.sav") || (file_exists("gnap.sav") && versione = "0.0.0")
+				if !file_exists("gnap.sav") || (file_exists("gnap.sav") && versione = "1.0.0.0")
 				{
 					prima_registrazione = true;
 					scrivendo = true;
@@ -153,11 +153,13 @@ function tutorial_draw(){
 	var _teng = @"Welcome to Gnàp!
 There are some bubbles in the sky. Press Z to shoot at them with your own bubbles: by doing so, you will create other bubbles onto them, and if you aim for the center, you will make big bubbles, and with big bubbles come big points!
 But watch out! There are bees that can pop your bubbles. Shoot them down... or up, with your bubbles. Bubbles can also pop if enough stress is put onto them, like having too many 'child' bubbles inside them.
-The games end when no bubbles are left.",
+The games end when no bubbles are left.
+Also, you can press the down arrow to slide like a Blue Bomber.",
 	_tita = @"Benvenuto in Gnàp!
 Il cielo è popolato dalle bolle. Premi Z per sparare ad esse con le tue bolle: così facendo, creerai altre bolle al loro interno, e se miri al centro riuscirai a fare bolle grandi che danno punteggi alti! 
 Ma attenzione! Ci sono anche delle api che possono far scoppiare le tue bolle. Puoi farle andare via sparandole contro. Inoltre, le bolle possono scoppiare anche quando sono sottoposte a stress, come avere troppe bolle 'figlie' al proprio interno.
-Il gioco finisce quando tutte le bolle sono scoppiate.", 
+Il gioco finisce quando tutte le bolle sono scoppiate.
+Ah, puoi premere freccia giù per scivolare come un Blue Bomber.", 
 	_guix = display_get_gui_width(), _guiy = display_get_gui_height();
 
 	draw_text_border(_guix/2,_guiy*3/5,fnt_tutorial,_teng,_tita,,,,,500)

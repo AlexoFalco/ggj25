@@ -14,4 +14,5 @@ if !instance_exists(collision_line(startX-100, startY, startX+100, startY, obj_b
 	}
 }
 
-alarm[1] = random_range(120, 240)
+conta_api++;
+alarm[1] = max(30,random_range(360 - (conta_api*2), 240 - (conta_api*2)));

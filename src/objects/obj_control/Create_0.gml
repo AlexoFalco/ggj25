@@ -19,3 +19,4 @@ punteggio_add = function(_punteggio, xx = 0, yy = 0, low = true)
     punteggio += _punteggio
     parte_audio(global.sfx,low ? sfx_score_add_low : sfx_score_add_high, 1, false);
 }
+

@@ -67,4 +67,4 @@ else
 	}
 }
 
-//debug_text($"{alarm[9]}",display_get_gui_width()/2,display_get_gui_height()/2);
+//debug_text($"{alarm[1]}",display_get_gui_width()/2,display_get_gui_height()/2);

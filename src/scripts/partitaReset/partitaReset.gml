@@ -9,6 +9,7 @@ messaggio_eng = "";
 messaggio_ita = "";
 audio_stop_sound(tema_musicale);
 tema_musicale = -1;
+conta_api = 0;
 
 {//allarmi in-game
 	alarm[0] = 300; //vento

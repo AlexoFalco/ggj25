@@ -62,6 +62,7 @@ function scr_inizio_globale()
 		pausato = false;
 		partita_iniziando = false;
 		tema_musicale = -1;
+		conta_api = 0;
 		
 		{//menu principale
 			premuto_per_iniziare = false;
