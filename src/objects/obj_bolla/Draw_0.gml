@@ -5,6 +5,7 @@
 //draw_sprite_ext(sprite_index, image_index, x,y,image_xscale, image_yscale, image_angle, image_blend, 0.1)
 
 //draw_self()
+event_inherited();
 
 var color_dark = #c7d6ea
 var color_light = #ffffff

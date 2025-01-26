@@ -12,7 +12,7 @@ if con.NumGiocatori = 1 //TEMPORANEO
 	else
 	{
 	    draw_set_color(c_white)
-	    draw_text_border(room_width/2, 150, fnt_base,text1);
+	    draw_text_border(display_get_gui_width()/2, display_get_gui_height()/2, fnt_base,text1);
 	};
 }
 

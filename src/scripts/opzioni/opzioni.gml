@@ -34,7 +34,6 @@ var _guix = display_get_gui_width(), _guiy = display_get_gui_height();
 			{
 				pausato = false;
 				seleopzioni = 0;
-				vedistat = false
 			}
 			break;
 			case OPZIONIPAUSA.ESCI:
@@ -42,7 +41,6 @@ var _guix = display_get_gui_width(), _guiy = display_get_gui_height();
 				partita_iniziando = false;
 				partitaReset();
 				room_goto(rm_menu);
-				vedistat = false;
 				impostazioni = false;
 			}
 			break;
@@ -50,7 +48,6 @@ var _guix = display_get_gui_width(), _guiy = display_get_gui_height();
 			{
 				partitaReset();
 				room_restart();
-				vedistat = false;
 				impostazioni = false;
 			}
 			break;

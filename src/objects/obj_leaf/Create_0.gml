@@ -1,4 +1,5 @@
 event_inherited();
+con = obj_control;
 dir = 0;
 grv = 0.33;
 

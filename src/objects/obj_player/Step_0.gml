@@ -56,7 +56,8 @@ inputMagnitude = (horMov != 0);
 //		sprite_index = spr_player;
 //	}
 //}
-script_execute(playerStato);
+if !con.pausato && !con.gameover
+	script_execute(playerStato);
 
 
 //with obj_camera
