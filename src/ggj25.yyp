@@ -1,633 +1,145 @@
 {
-  "$GMProject": "",
-  "%Name": "ggj25",
-  "AudioGroups": [
-    {
-      "$GMAudioGroup": "",
-      "%Name": "audiogroup_default",
-      "name": "audiogroup_default",
-      "resourceType": "GMAudioGroup",
-      "resourceVersion": "2.0",
-      "targets": -1
-    }
+  "$GMProject":"",
+  "%Name":"ggj25",
+  "AudioGroups":[
+    {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
-  "configs": {
-    "children": [],
-    "name": "Default"
+  "configs":{
+    "children":[],
+    "name":"Default",
   },
-  "defaultScriptType": 1,
-  "Folders": [
-    {
-      "$GMFolder": "",
-      "%Name": "Animation Curves",
-      "folderPath": "folders/Animation Curves.yy",
-      "name": "Animation Curves",
-      "resourceType": "GMFolder",
-      "resourceVersion": "2.0"
-    },
-    {
-      "$GMFolder": "",
-      "%Name": "Extensions",
-      "folderPath": "folders/Extensions.yy",
-      "name": "Extensions",
-      "resourceType": "GMFolder",
-      "resourceVersion": "2.0"
-    },
-    {
-      "$GMFolder": "",
-      "%Name": "Fonts",
-      "folderPath": "folders/Fonts.yy",
-      "name": "Fonts",
-      "resourceType": "GMFolder",
-      "resourceVersion": "2.0"
-    },
-    {
-      "$GMFolder": "",
-      "%Name": "Notes",
-      "folderPath": "folders/Notes.yy",
-      "name": "Notes",
-      "resourceType": "GMFolder",
-      "resourceVersion": "2.0"
-    },
-    {
-      "$GMFolder": "",
-      "%Name": "Objects",
-      "folderPath": "folders/Objects.yy",
-      "name": "Objects",
-      "resourceType": "GMFolder",
-      "resourceVersion": "2.0"
-    },
-    {
-      "$GMFolder": "",
-      "%Name": "Particle Systems",
-      "folderPath": "folders/Particle Systems.yy",
-      "name": "Particle Systems",
-      "resourceType": "GMFolder",
-      "resourceVersion": "2.0"
-    },
-    {
-      "$GMFolder": "",
-      "%Name": "Paths",
-      "folderPath": "folders/Paths.yy",
-      "name": "Paths",
-      "resourceType": "GMFolder",
-      "resourceVersion": "2.0"
-    },
-    {
-      "$GMFolder": "",
-      "%Name": "Rooms",
-      "folderPath": "folders/Rooms.yy",
-      "name": "Rooms",
-      "resourceType": "GMFolder",
-      "resourceVersion": "2.0"
-    },
-    {
-      "$GMFolder": "",
-      "%Name": "Scripts",
-      "folderPath": "folders/Scripts.yy",
-      "name": "Scripts",
-      "resourceType": "GMFolder",
-      "resourceVersion": "2.0"
-    },
-    {
-      "$GMFolder": "",
-      "%Name": "Punteggi Online",
-      "folderPath": "folders/Scripts/Punteggi Online.yy",
-      "name": "Punteggi Online",
-      "resourceType": "GMFolder",
-      "resourceVersion": "2.0"
-    },
-    {
-      "$GMFolder": "",
-      "%Name": "Sequences",
-      "folderPath": "folders/Sequences.yy",
-      "name": "Sequences",
-      "resourceType": "GMFolder",
-      "resourceVersion": "2.0"
-    },
-    {
-      "$GMFolder": "",
-      "%Name": "Shaders",
-      "folderPath": "folders/Shaders.yy",
-      "name": "Shaders",
-      "resourceType": "GMFolder",
-      "resourceVersion": "2.0"
-    },
-    {
-      "$GMFolder": "",
-      "%Name": "Sounds",
-      "folderPath": "folders/Sounds.yy",
-      "name": "Sounds",
-      "resourceType": "GMFolder",
-      "resourceVersion": "2.0"
-    },
-    {
-      "$GMFolder": "",
-      "%Name": "Sprites",
-      "folderPath": "folders/Sprites.yy",
-      "name": "Sprites",
-      "resourceType": "GMFolder",
-      "resourceVersion": "2.0"
-    },
-    {
-      "$GMFolder": "",
-      "%Name": "background",
-      "folderPath": "folders/Sprites/background.yy",
-      "name": "background",
-      "resourceType": "GMFolder",
-      "resourceVersion": "2.0"
-    },
-    {
-      "$GMFolder": "",
-      "%Name": "Tile Sets",
-      "folderPath": "folders/Tile Sets.yy",
-      "name": "Tile Sets",
-      "resourceType": "GMFolder",
-      "resourceVersion": "2.0"
-    },
-    {
-      "$GMFolder": "",
-      "%Name": "Timelines",
-      "folderPath": "folders/Timelines.yy",
-      "name": "Timelines",
-      "resourceType": "GMFolder",
-      "resourceVersion": "2.0"
-    }
+  "defaultScriptType":1,
+  "Folders":[
+    {"$GMFolder":"","%Name":"Animation Curves","folderPath":"folders/Animation Curves.yy","name":"Animation Curves","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Extensions","folderPath":"folders/Extensions.yy","name":"Extensions","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Notes","folderPath":"folders/Notes.yy","name":"Notes","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Particle Systems","folderPath":"folders/Particle Systems.yy","name":"Particle Systems","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Paths","folderPath":"folders/Paths.yy","name":"Paths","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Rooms","folderPath":"folders/Rooms.yy","name":"Rooms","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Scripts","folderPath":"folders/Scripts.yy","name":"Scripts","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Punteggi Online","folderPath":"folders/Scripts/Punteggi Online.yy","name":"Punteggi Online","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Sequences","folderPath":"folders/Sequences.yy","name":"Sequences","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Shaders","folderPath":"folders/Shaders.yy","name":"Shaders","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Sounds","folderPath":"folders/Sounds.yy","name":"Sounds","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Sprites","folderPath":"folders/Sprites.yy","name":"Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"background","folderPath":"folders/Sprites/background.yy","name":"background","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
-  "IncludedFiles": [],
-  "isEcma": false,
-  "LibraryEmitters": [],
-  "MetaData": {
-    "IDEVersion": "2024.8.1.171"
+  "IncludedFiles":[],
+  "isEcma":false,
+  "LibraryEmitters":[],
+  "MetaData":{
+    "IDEVersion":"2024.8.1.171",
   },
-  "name": "ggj25",
-  "resources": [
-    {
-      "id": {
-        "name": "ac_bolla_marginebydistanza",
-        "path": "animcurves/ac_bolla_marginebydistanza/ac_bolla_marginebydistanza.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "ac_bolla_raggiorandom",
-        "path": "animcurves/ac_bolla_raggiorandom/ac_bolla_raggiorandom.yy"
-      }
-    },
-    { "id": { "name": "fnt_base", "path": "fonts/fnt_base/fnt_base.yy" } },
-    {
-      "id": { "name": "fnt_bubble", "path": "fonts/fnt_bubble/fnt_bubble.yy" }
-    },
-    { "id": { "name": "obj_aim", "path": "objects/obj_aim/obj_aim.yy" } },
-    {
-      "id": {
-        "name": "fnt_tutorial",
-        "path": "fonts/fnt_tutorial/fnt_tutorial.yy"
-      }
-    },
-    { "id": { "name": "obj_bee", "path": "objects/obj_bee/obj_bee.yy" } },
-    {
-      "id": {
-        "name": "obj_bolla_wrap",
-        "path": "objects/obj_bolla_wrap/obj_bolla_wrap.yy"
-      }
-    },
-    { "id": { "name": "obj_bolla", "path": "objects/obj_bolla/obj_bolla.yy" } },
-    {
-      "id": { "name": "obj_camera", "path": "objects/obj_camera/obj_camera.yy" }
-    },
-    {
-      "id": {
-        "name": "obj_control",
-        "path": "objects/obj_control/obj_control.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "obj_effect_bolla_tear",
-        "path": "objects/obj_effect_bolla_tear/obj_effect_bolla_tear.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "obj_effect_bolla",
-        "path": "objects/obj_effect_bolla/obj_effect_bolla.yy"
-      }
-    },
-    { "id": { "name": "obj_enemy", "path": "objects/obj_enemy/obj_enemy.yy" } },
-    {
-      "id": {
-        "name": "obj_highscore",
-        "path": "objects/obj_highscore/obj_highscore.yy"
-      }
-    },
-    { "id": { "name": "obj_leaf", "path": "objects/obj_leaf/obj_leaf.yy" } },
-    {
-      "id": {
-        "name": "obj_managerbolla",
-        "path": "objects/obj_managerbolla/obj_managerbolla.yy"
-      }
-    },
-    {
-      "id": { "name": "obj_parent", "path": "objects/obj_parent/obj_parent.yy" }
-    },
-    {
-      "id": {
-        "name": "obj_player_proiettile",
-        "path": "objects/obj_player_proiettile/obj_player_proiettile.yy"
-      }
-    },
-    {
-      "id": { "name": "obj_player", "path": "objects/obj_player/obj_player.yy" }
-    },
-    {
-      "id": {
-        "name": "obj_playercontrol",
-        "path": "objects/obj_playercontrol/obj_playercontrol.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "obj_projectile",
-        "path": "objects/obj_projectile/obj_projectile.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "obj_water_ripple",
-        "path": "objects/obj_water_ripple/obj_water_ripple.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "obj_water_splash",
-        "path": "objects/obj_water_splash/obj_water_splash.yy"
-      }
-    },
-    { "id": { "name": "obj_wind", "path": "objects/obj_wind/obj_wind.yy" } },
-    { "id": { "name": "rm_game", "path": "rooms/rm_game/rm_game.yy" } },
-    { "id": { "name": "rm_menu", "path": "rooms/rm_menu/rm_menu.yy" } },
-    {
-      "id": {
-        "name": "rm_test_bolla",
-        "path": "rooms/rm_test_bolla/rm_test_bolla.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "ac_get_curve_value",
-        "path": "scripts/ac_get_curve_value/ac_get_curve_value.yy"
-      }
-    },
-    { "id": { "name": "clicca", "path": "scripts/clicca/clicca.yy" } },
-    {
-      "id": {
-        "name": "draw_text_highscore",
-        "path": "scripts/draw_text_highscore/draw_text_highscore.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "get_baricentro",
-        "path": "scripts/get_baricentro/get_baricentro.yy"
-      }
-    },
-    { "id": { "name": "MACRO", "path": "scripts/MACRO/MACRO.yy" } },
-    {
-      "id": {
-        "name": "menu_iniziale",
-        "path": "scripts/menu_iniziale/menu_iniziale.yy"
-      }
-    },
-    { "id": { "name": "mobile", "path": "scripts/mobile/mobile.yy" } },
-    { "id": { "name": "opzioni", "path": "scripts/opzioni/opzioni.yy" } },
-    {
-      "id": {
-        "name": "partitaReset",
-        "path": "scripts/partitaReset/partitaReset.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "salvataggio",
-        "path": "scripts/salvataggio/salvataggio.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "schermo_intero",
-        "path": "scripts/schermo_intero/schermo_intero.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "scr_comandi",
-        "path": "scripts/scr_comandi/scr_comandi.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "scr_get_scores",
-        "path": "scripts/scr_get_scores/scr_get_scores.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "scr_inizio_globale",
-        "path": "scripts/scr_inizio_globale/scr_inizio_globale.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "scr_send_score",
-        "path": "scripts/scr_send_score/scr_send_score.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "scrivi_nome",
-        "path": "scripts/scrivi_nome/scrivi_nome.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "stati_giocatore",
-        "path": "scripts/stati_giocatore/stati_giocatore.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "string_split",
-        "path": "scripts/string_split/string_split.yy"
-      }
-    },
-    { "id": { "name": "testo", "path": "scripts/testo/testo.yy" } },
-    {
-      "id": { "name": "url_encode", "path": "scripts/url_encode/url_encode.yy" }
-    },
-    { "id": { "name": "volume", "path": "scripts/volume/volume.yy" } },
-    { "id": { "name": "ost_game", "path": "sounds/ost_game/ost_game.yy" } },
-    {
-      "id": {
-        "name": "sfx_bubble_add_2",
-        "path": "sounds/sfx_bubble_add_2/sfx_bubble_add_2.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sfx_bubble_add_wrong",
-        "path": "sounds/sfx_bubble_add_wrong/sfx_bubble_add_wrong.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sfx_bubble_add",
-        "path": "sounds/sfx_bubble_add/sfx_bubble_add.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sfx_bubble_hit_0",
-        "path": "sounds/sfx_bubble_hit_0/sfx_bubble_hit_0.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sfx_bubble_hit_1",
-        "path": "sounds/sfx_bubble_hit_1/sfx_bubble_hit_1.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sfx_bubble_hit_2",
-        "path": "sounds/sfx_bubble_hit_2/sfx_bubble_hit_2.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sfx_bubble_pop",
-        "path": "sounds/sfx_bubble_pop/sfx_bubble_pop.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sfx_gnap_zig",
-        "path": "sounds/sfx_gnap_zig/sfx_gnap_zig.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sfx_player_fire",
-        "path": "sounds/sfx_player_fire/sfx_player_fire.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sfx_player_slide",
-        "path": "sounds/sfx_player_slide/sfx_player_slide.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sfx_player_walk_0",
-        "path": "sounds/sfx_player_walk_0/sfx_player_walk_0.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sfx_player_walk_1",
-        "path": "sounds/sfx_player_walk_1/sfx_player_walk_1.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sfx_player_walk_2",
-        "path": "sounds/sfx_player_walk_2/sfx_player_walk_2.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sfx_player_walk_3",
-        "path": "sounds/sfx_player_walk_3/sfx_player_walk_3.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sfx_score_add_high",
-        "path": "sounds/sfx_score_add_high/sfx_score_add_high.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "sfx_score_add_low",
-        "path": "sounds/sfx_score_add_low/sfx_score_add_low.yy"
-      }
-    },
-    { "id": { "name": "spr_aim", "path": "sprites/spr_aim/spr_aim.yy" } },
-    {
-      "id": {
-        "name": "spr_bee_wrap",
-        "path": "sprites/spr_bee_wrap/spr_bee_wrap.yy"
-      }
-    },
-    { "id": { "name": "spr_bee", "path": "sprites/spr_bee/spr_bee.yy" } },
-    {
-      "id": {
-        "name": "spr_bg_clouds_low",
-        "path": "sprites/spr_bg_clouds_low/spr_bg_clouds_low.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_bg_clouds",
-        "path": "sprites/spr_bg_clouds/spr_bg_clouds.yy"
-      }
-    },
-    {
-      "id": { "name": "spr_bg_sun", "path": "sprites/spr_bg_sun/spr_bg_sun.yy" }
-    },
-    {
-      "id": {
-        "name": "spr_bg_water",
-        "path": "sprites/spr_bg_water/spr_bg_water.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_bolla_riflesso",
-        "path": "sprites/spr_bolla_riflesso/spr_bolla_riflesso.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_bolla_wrap",
-        "path": "sprites/spr_bolla_wrap/spr_bolla_wrap.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_bollaSparo",
-        "path": "sprites/spr_bollaSparo/spr_bollaSparo.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_bubble_tears",
-        "path": "sprites/spr_bubble_tears/spr_bubble_tears.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_fg_clouds",
-        "path": "sprites/spr_fg_clouds/spr_fg_clouds.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_iconine",
-        "path": "sprites/spr_iconine/spr_iconine.yy"
-      }
-    },
-    { "id": { "name": "spr_leaf", "path": "sprites/spr_leaf/spr_leaf.yy" } },
-    {
-      "id": { "name": "spr_lingua", "path": "sprites/spr_lingua/spr_lingua.yy" }
-    },
-    {
-      "id": {
-        "name": "spr_menu_splashscreen",
-        "path": "sprites/spr_menu_splashscreen/spr_menu_splashscreen.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_menu_title",
-        "path": "sprites/spr_menu_title/spr_menu_title.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_player_fire",
-        "path": "sprites/spr_player_fire/spr_player_fire.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_player_ripple",
-        "path": "sprites/spr_player_ripple/spr_player_ripple.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_player_slide",
-        "path": "sprites/spr_player_slide/spr_player_slide.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_player_walk",
-        "path": "sprites/spr_player_walk/spr_player_walk.yy"
-      }
-    },
-    {
-      "id": { "name": "spr_player", "path": "sprites/spr_player/spr_player.yy" }
-    },
-    {
-      "id": {
-        "name": "spr_water_fish",
-        "path": "sprites/spr_water_fish/spr_water_fish.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_water_splash_1",
-        "path": "sprites/spr_water_splash_1/spr_water_splash_1.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_water_splash_2",
-        "path": "sprites/spr_water_splash_2/spr_water_splash_2.yy"
-      }
-    },
-    {
-      "id": {
-        "name": "spr_water_star",
-        "path": "sprites/spr_water_star/spr_water_star.yy"
-      }
-    },
-    { "id": { "name": "spr", "path": "sprites/spr/spr.yy" } },
-    { "id": { "name": "Sprite1", "path": "sprites/Sprite1/Sprite1.yy" } }
+  "name":"ggj25",
+  "resources":[
+    {"id":{"name":"ac_bolla_marginebydistanza","path":"animcurves/ac_bolla_marginebydistanza/ac_bolla_marginebydistanza.yy",},},
+    {"id":{"name":"ac_bolla_raggiorandom","path":"animcurves/ac_bolla_raggiorandom/ac_bolla_raggiorandom.yy",},},
+    {"id":{"name":"fnt_base","path":"fonts/fnt_base/fnt_base.yy",},},
+    {"id":{"name":"fnt_bubble","path":"fonts/fnt_bubble/fnt_bubble.yy",},},
+    {"id":{"name":"fnt_tutorial","path":"fonts/fnt_tutorial/fnt_tutorial.yy",},},
+    {"id":{"name":"obj_aim","path":"objects/obj_aim/obj_aim.yy",},},
+    {"id":{"name":"obj_bee","path":"objects/obj_bee/obj_bee.yy",},},
+    {"id":{"name":"obj_bolla_wrap","path":"objects/obj_bolla_wrap/obj_bolla_wrap.yy",},},
+    {"id":{"name":"obj_bolla","path":"objects/obj_bolla/obj_bolla.yy",},},
+    {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
+    {"id":{"name":"obj_control","path":"objects/obj_control/obj_control.yy",},},
+    {"id":{"name":"obj_effect_bolla_tear","path":"objects/obj_effect_bolla_tear/obj_effect_bolla_tear.yy",},},
+    {"id":{"name":"obj_effect_bolla","path":"objects/obj_effect_bolla/obj_effect_bolla.yy",},},
+    {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},},
+    {"id":{"name":"obj_highscore","path":"objects/obj_highscore/obj_highscore.yy",},},
+    {"id":{"name":"obj_leaf","path":"objects/obj_leaf/obj_leaf.yy",},},
+    {"id":{"name":"obj_managerbolla","path":"objects/obj_managerbolla/obj_managerbolla.yy",},},
+    {"id":{"name":"obj_parent","path":"objects/obj_parent/obj_parent.yy",},},
+    {"id":{"name":"obj_player_proiettile","path":"objects/obj_player_proiettile/obj_player_proiettile.yy",},},
+    {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"id":{"name":"obj_playercontrol","path":"objects/obj_playercontrol/obj_playercontrol.yy",},},
+    {"id":{"name":"obj_projectile","path":"objects/obj_projectile/obj_projectile.yy",},},
+    {"id":{"name":"obj_water_ripple","path":"objects/obj_water_ripple/obj_water_ripple.yy",},},
+    {"id":{"name":"obj_water_splash","path":"objects/obj_water_splash/obj_water_splash.yy",},},
+    {"id":{"name":"obj_wind","path":"objects/obj_wind/obj_wind.yy",},},
+    {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
+    {"id":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
+    {"id":{"name":"rm_test_bolla","path":"rooms/rm_test_bolla/rm_test_bolla.yy",},},
+    {"id":{"name":"ac_get_curve_value","path":"scripts/ac_get_curve_value/ac_get_curve_value.yy",},},
+    {"id":{"name":"clicca","path":"scripts/clicca/clicca.yy",},},
+    {"id":{"name":"draw_text_highscore","path":"scripts/draw_text_highscore/draw_text_highscore.yy",},},
+    {"id":{"name":"get_baricentro","path":"scripts/get_baricentro/get_baricentro.yy",},},
+    {"id":{"name":"MACRO","path":"scripts/MACRO/MACRO.yy",},},
+    {"id":{"name":"menu_iniziale","path":"scripts/menu_iniziale/menu_iniziale.yy",},},
+    {"id":{"name":"mobile","path":"scripts/mobile/mobile.yy",},},
+    {"id":{"name":"opzioni","path":"scripts/opzioni/opzioni.yy",},},
+    {"id":{"name":"partitaReset","path":"scripts/partitaReset/partitaReset.yy",},},
+    {"id":{"name":"salvataggio","path":"scripts/salvataggio/salvataggio.yy",},},
+    {"id":{"name":"schermo_intero","path":"scripts/schermo_intero/schermo_intero.yy",},},
+    {"id":{"name":"scr_comandi","path":"scripts/scr_comandi/scr_comandi.yy",},},
+    {"id":{"name":"scr_get_scores","path":"scripts/scr_get_scores/scr_get_scores.yy",},},
+    {"id":{"name":"scr_inizio_globale","path":"scripts/scr_inizio_globale/scr_inizio_globale.yy",},},
+    {"id":{"name":"scr_send_score","path":"scripts/scr_send_score/scr_send_score.yy",},},
+    {"id":{"name":"scrivi_nome","path":"scripts/scrivi_nome/scrivi_nome.yy",},},
+    {"id":{"name":"stati_giocatore","path":"scripts/stati_giocatore/stati_giocatore.yy",},},
+    {"id":{"name":"string_split","path":"scripts/string_split/string_split.yy",},},
+    {"id":{"name":"testo","path":"scripts/testo/testo.yy",},},
+    {"id":{"name":"url_encode","path":"scripts/url_encode/url_encode.yy",},},
+    {"id":{"name":"volume","path":"scripts/volume/volume.yy",},},
+    {"id":{"name":"ost_game","path":"sounds/ost_game/ost_game.yy",},},
+    {"id":{"name":"sfx_bubble_add_2","path":"sounds/sfx_bubble_add_2/sfx_bubble_add_2.yy",},},
+    {"id":{"name":"sfx_bubble_add_wrong","path":"sounds/sfx_bubble_add_wrong/sfx_bubble_add_wrong.yy",},},
+    {"id":{"name":"sfx_bubble_add","path":"sounds/sfx_bubble_add/sfx_bubble_add.yy",},},
+    {"id":{"name":"sfx_bubble_hit_0","path":"sounds/sfx_bubble_hit_0/sfx_bubble_hit_0.yy",},},
+    {"id":{"name":"sfx_bubble_hit_1","path":"sounds/sfx_bubble_hit_1/sfx_bubble_hit_1.yy",},},
+    {"id":{"name":"sfx_bubble_hit_2","path":"sounds/sfx_bubble_hit_2/sfx_bubble_hit_2.yy",},},
+    {"id":{"name":"sfx_bubble_pop","path":"sounds/sfx_bubble_pop/sfx_bubble_pop.yy",},},
+    {"id":{"name":"sfx_gnap_zig","path":"sounds/sfx_gnap_zig/sfx_gnap_zig.yy",},},
+    {"id":{"name":"sfx_player_fire","path":"sounds/sfx_player_fire/sfx_player_fire.yy",},},
+    {"id":{"name":"sfx_player_slide","path":"sounds/sfx_player_slide/sfx_player_slide.yy",},},
+    {"id":{"name":"sfx_player_walk_0","path":"sounds/sfx_player_walk_0/sfx_player_walk_0.yy",},},
+    {"id":{"name":"sfx_player_walk_1","path":"sounds/sfx_player_walk_1/sfx_player_walk_1.yy",},},
+    {"id":{"name":"sfx_player_walk_2","path":"sounds/sfx_player_walk_2/sfx_player_walk_2.yy",},},
+    {"id":{"name":"sfx_player_walk_3","path":"sounds/sfx_player_walk_3/sfx_player_walk_3.yy",},},
+    {"id":{"name":"sfx_score_add_high","path":"sounds/sfx_score_add_high/sfx_score_add_high.yy",},},
+    {"id":{"name":"sfx_score_add_low","path":"sounds/sfx_score_add_low/sfx_score_add_low.yy",},},
+    {"id":{"name":"spr_aim","path":"sprites/spr_aim/spr_aim.yy",},},
+    {"id":{"name":"spr_bee_wrap","path":"sprites/spr_bee_wrap/spr_bee_wrap.yy",},},
+    {"id":{"name":"spr_bee","path":"sprites/spr_bee/spr_bee.yy",},},
+    {"id":{"name":"spr_bg_clouds_low","path":"sprites/spr_bg_clouds_low/spr_bg_clouds_low.yy",},},
+    {"id":{"name":"spr_bg_clouds","path":"sprites/spr_bg_clouds/spr_bg_clouds.yy",},},
+    {"id":{"name":"spr_bg_sun","path":"sprites/spr_bg_sun/spr_bg_sun.yy",},},
+    {"id":{"name":"spr_bg_water","path":"sprites/spr_bg_water/spr_bg_water.yy",},},
+    {"id":{"name":"spr_bolla_riflesso","path":"sprites/spr_bolla_riflesso/spr_bolla_riflesso.yy",},},
+    {"id":{"name":"spr_bolla_wrap","path":"sprites/spr_bolla_wrap/spr_bolla_wrap.yy",},},
+    {"id":{"name":"spr_bollaSparo","path":"sprites/spr_bollaSparo/spr_bollaSparo.yy",},},
+    {"id":{"name":"spr_bubble_tears","path":"sprites/spr_bubble_tears/spr_bubble_tears.yy",},},
+    {"id":{"name":"spr_fg_clouds","path":"sprites/spr_fg_clouds/spr_fg_clouds.yy",},},
+    {"id":{"name":"spr_iconine","path":"sprites/spr_iconine/spr_iconine.yy",},},
+    {"id":{"name":"spr_leaf","path":"sprites/spr_leaf/spr_leaf.yy",},},
+    {"id":{"name":"spr_lingua","path":"sprites/spr_lingua/spr_lingua.yy",},},
+    {"id":{"name":"spr_menu_splashscreen","path":"sprites/spr_menu_splashscreen/spr_menu_splashscreen.yy",},},
+    {"id":{"name":"spr_menu_title","path":"sprites/spr_menu_title/spr_menu_title.yy",},},
+    {"id":{"name":"spr_player_fire","path":"sprites/spr_player_fire/spr_player_fire.yy",},},
+    {"id":{"name":"spr_player_ripple","path":"sprites/spr_player_ripple/spr_player_ripple.yy",},},
+    {"id":{"name":"spr_player_slide","path":"sprites/spr_player_slide/spr_player_slide.yy",},},
+    {"id":{"name":"spr_player_walk","path":"sprites/spr_player_walk/spr_player_walk.yy",},},
+    {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
+    {"id":{"name":"spr_water_fish","path":"sprites/spr_water_fish/spr_water_fish.yy",},},
+    {"id":{"name":"spr_water_splash_1","path":"sprites/spr_water_splash_1/spr_water_splash_1.yy",},},
+    {"id":{"name":"spr_water_splash_2","path":"sprites/spr_water_splash_2/spr_water_splash_2.yy",},},
+    {"id":{"name":"spr_water_star","path":"sprites/spr_water_star/spr_water_star.yy",},},
+    {"id":{"name":"spr","path":"sprites/spr/spr.yy",},},
+    {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},},
   ],
-  "resourceType": "GMProject",
-  "resourceVersion": "2.0",
-  "RoomOrderNodes": [
-    { "roomId": { "name": "rm_menu", "path": "rooms/rm_menu/rm_menu.yy" } },
-    {
-      "roomId": {
-        "name": "rm_test_bolla",
-        "path": "rooms/rm_test_bolla/rm_test_bolla.yy"
-      }
-    },
-    { "roomId": { "name": "rm_game", "path": "rooms/rm_game/rm_game.yy" } }
+  "resourceType":"GMProject",
+  "resourceVersion":"2.0",
+  "RoomOrderNodes":[
+    {"roomId":{"name":"rm_menu","path":"rooms/rm_menu/rm_menu.yy",},},
+    {"roomId":{"name":"rm_test_bolla","path":"rooms/rm_test_bolla/rm_test_bolla.yy",},},
+    {"roomId":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
   ],
-  "templateType": "game",
-  "TextureGroups": [
-    {
-      "$GMTextureGroup": "",
-      "%Name": "Default",
-      "autocrop": true,
-      "border": 2,
-      "compressFormat": "bz2",
-      "customOptions": "",
-      "directory": "",
-      "groupParent": null,
-      "isScaled": true,
-      "loadType": "default",
-      "mipsToGenerate": 0,
-      "name": "Default",
-      "resourceType": "GMTextureGroup",
-      "resourceVersion": "2.0",
-      "targets": -1
-    }
-  ]
+  "templateType":"game",
+  "TextureGroups":[
+    {"$GMTextureGroup":"","%Name":"Default","autocrop":true,"border":2,"compressFormat":"bz2","customOptions":"","directory":"","groupParent":null,"isScaled":true,"loadType":"default","mipsToGenerate":0,"name":"Default","resourceType":"GMTextureGroup","resourceVersion":"2.0","targets":-1,},
+  ],
 }

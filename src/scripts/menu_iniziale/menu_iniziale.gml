@@ -22,7 +22,7 @@ if !menugiocatori && !impostazioni && !instance_exists(obj_highscore) && !ricono
 		{
 			case MENUINIZIALE.GIOCA:
 			{
-				if !file_exists("gnap.sav") || (file_exists("gnap.sav") && versione = "0.0.0")
+				if !file_exists("gnap.sav") || (file_exists("gnap.sav") && versione = "1.0.0.0")
 				{
 					prima_registrazione = true;
 					scrivendo = true;
