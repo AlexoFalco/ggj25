@@ -1,0 +1,5 @@
+draw_set_color(c_white)
+draw_set_circle_precision(64)
+draw_set_alpha(0.5)
+draw_circle(x, y, raggio, 0)
+draw_set_alpha(1)

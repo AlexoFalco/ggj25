@@ -2,6 +2,9 @@
 parte_audio(global.sfx,sfx_bubble_pop,1,false);
 parte_audio(global.sfx,sfx_bubble_add_wrong,1,false);
 
+var _eff_ref = instance_create_depth(x,y,depth-1, obj_effect_bolla)
+_eff_ref.raggio = raggio;
+
 var n_figli = array_length(figli)
 var i;
 for (i = 0; i < n_figli; i+=1)
