@@ -34,6 +34,7 @@ uccididiscendenza = false;
 _call = noone;
 
 dest_count = 0;
+waitinstab = 0;
 
 set_random_bounce = function(_max)
 {
@@ -61,7 +62,7 @@ get_instbilita_bolla = function(_n_figli, _is_radice, is_first)
 	//0: stabile, nessun effetto (con figli pari a 1, 2)
 	//1: poco stabile, lieve effetto (con figli pari a 3)
 	//2: instabile prossima all'esplosione, effetto marcato(con figli pari a 0, 4)
-	if (_n_figli == 0 and _is_radice and !is_first) return 2
+	if (_n_figli == 0 and _is_radice and !is_first and waitinstab > 60) return 2
 	var _k = _n_figli <=2 ? 0 : (_n_figli-2);
 	return _k;
 }

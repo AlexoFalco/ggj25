@@ -158,8 +158,16 @@ if !con.pausato
 		raggio = lerp(raggio,raggio_nuovo, 0.05)
 	}
 	else
-	{
+	{	
 		//raggio += raggio_incremento_passivo
+	}
+	
+	if is_radice 
+	{
+		if (n_figli > 0)
+			waitinstab = 0;
+		else
+			waitinstab++;
 	}
 	//var camera_ymin = camera_get_view_y(view_camera[0])
 
