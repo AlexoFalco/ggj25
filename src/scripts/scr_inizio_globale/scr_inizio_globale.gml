@@ -85,6 +85,7 @@ function scr_inizio_globale()
 		
 		{//punteggi e record
 			punteggio = 0;
+			pp = 0;
 			record[1] = 0;
 			record[2] = 0;
 			record[3] = 0;

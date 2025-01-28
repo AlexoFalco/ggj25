@@ -57,7 +57,11 @@ else
 	else
 	{
 		if !instance_exists(obj_highscore)
-			draw_text_border(display_get_gui_width()/2, display_get_gui_height()/2-50,fnt_base,"GAME OVER",,#CCF9FF,#FFA3F5,4);
+		{
+			draw_text_border(display_get_gui_width()/2, display_get_gui_height()/2-50,fnt_base,"GAME OVER",,#CCF9FF,#FFA3F5,3);
+			
+			draw_text_border(display_get_gui_width()/2, display_get_gui_height()/2+20,fnt_base,pp);
+		}
 		var _gopt, _gopty = display_get_gui_height()-50, _LNG = 70;
 		if selegameover = 0
 			_gopt = display_get_gui_width()/3-_LNG;

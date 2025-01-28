@@ -32,7 +32,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.11.0.179",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"ggj25",
   "resources":[
@@ -69,6 +69,7 @@
     {"id":{"name":"clicca","path":"scripts/clicca/clicca.yy",},},
     {"id":{"name":"draw_text_highscore","path":"scripts/draw_text_highscore/draw_text_highscore.yy",},},
     {"id":{"name":"get_baricentro","path":"scripts/get_baricentro/get_baricentro.yy",},},
+    {"id":{"name":"lista_nomi","path":"scripts/lista_nomi/lista_nomi.yy",},},
     {"id":{"name":"MACRO","path":"scripts/MACRO/MACRO.yy",},},
     {"id":{"name":"menu_iniziale","path":"scripts/menu_iniziale/menu_iniziale.yy",},},
     {"id":{"name":"mobile","path":"scripts/mobile/mobile.yy",},},

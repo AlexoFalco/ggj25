@@ -1,6 +1,6 @@
 if room = rm_menu
 {
-	alarm[9] = 6;
+	alarm[9] = 90;
 	if premuto_per_iniziare
 		scr_menuiniziale_step();
 	else
@@ -16,7 +16,7 @@ else if room = rm_game
 {
 	if !gameover
 	{
-		alarm[9] = 6;
+		alarm[9] = 90;
 		alarm[4] = 180;
 		if !instance_exists(obj_bolla)
 			gameover = true;
@@ -41,9 +41,17 @@ else if room = rm_game
 	}
 	else
 	{
+		if pp < floor(punteggio)
+			pp+=floor((punteggio)/30);
+		else
+			pp = floor(punteggio);
+			
+		if floor(punteggio) > record[NumGiocatori]
+		{
 			record[NumGiocatori] = floor(punteggio);
 			scr_send_score(nome,punteggio);
 			scr_record();
+		}
 		
 		if sxPress
 				selegameover = 0;

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"lista_nomi",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"lista_nomi",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

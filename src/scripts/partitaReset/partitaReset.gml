@@ -4,6 +4,7 @@ seleopzioni = 0;
 selegameover = 0;
 pausato = false;
 punteggio = 0;
+pp = 0;
 giocatori_pronti = 0;
 messaggio_eng = "";
 messaggio_ita = "";
