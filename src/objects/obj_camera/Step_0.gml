@@ -27,12 +27,12 @@ if !con.pausato
 		{
 			gosz = 320;
 			if ymin > global.soffitto
-				global.soffitto = min(ymin, camera_get_view_y(view_camera)+camera_get_view_height(view_camera)-180);
+				global.soffitto = min(ymin+1, camera_get_view_y(view_camera)+camera_get_view_height(view_camera)-180);
 		}
 		else
 		{
 			gosz = raggiomax * 6;
-			global.soffitto = min(ymin, camera_get_view_y(view_camera)+camera_get_view_height(view_camera)-(gosz/180*320));
+			global.soffitto = min(ymin+1, camera_get_view_y(view_camera)+camera_get_view_height(view_camera)-(gosz/180*320));
 		}
 		
 			if ymin-20 < camera_get_view_y(view_camera)

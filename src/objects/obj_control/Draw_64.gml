@@ -50,7 +50,15 @@ else
 		var tsec = (global.time mod (60*60)) div 60;
 		var tmin = global.time div (60*60);
 		
-		draw_text_border(display_get_gui_width()*1/16,display_get_gui_height()/16,fnt_base,$"{tmin}:{tsec}")
+			
+		var cocol = c_white;
+		if tmin = 0 && tsec < 10
+		cocol = c_red;
+		
+		if string_length(tsec) = 1
+		tsec = string("0"+string(tsec));
+		
+		draw_text_border(display_get_gui_width()*1/16,display_get_gui_height()/16,fnt_base,$"{tmin}:{tsec}", , cocol)
 		
 		//debug_text($"{gameover}",display_get_gui_width()/2,display_get_gui_height()/2);
 	}
@@ -58,7 +66,10 @@ else
 	{
 		if !instance_exists(obj_highscore)
 		{
-			draw_text_border(display_get_gui_width()/2, display_get_gui_height()/2-50,fnt_base,"GAME OVER",,#CCF9FF,#FFA3F5,3);
+			var tx = "GAME OVER";
+			if global.time = 0
+			tx = "TIME UP";
+			draw_text_border(display_get_gui_width()/2, display_get_gui_height()/2-50,fnt_base,tx,,#CCF9FF,#FFA3F5,3);
 			
 			draw_text_border(display_get_gui_width()/2, display_get_gui_height()/2+20,fnt_base,pp);
 		}
