@@ -1,4 +1,5 @@
-function draw_text_highscore(xx, yy, str, name, colour) {
+function draw_text_highscore(xx, yy, str, name, colour) 
+{
 	//
 	// Script:      Draws a highscore with the player’s name coloured in green
 	// Date:        2020-01-18
@@ -119,5 +120,7 @@ function draw_text_highscore(xx, yy, str, name, colour) {
   
 	    // Increment height
 	    height += string_height(string_hash_to_newline(str3[i]))//*sz;
+	
 	}
+	
 }

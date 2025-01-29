@@ -1,6 +1,6 @@
 function scr_comandi(giocatore=0){
 
-	var tastoA, tastoB, tastoX, tastoY, tastoL1, tastoR1, tastoL2, tastoR2, tastoStart, tastoSelect,
+	var tastoA, tastoB, tastoX, tastoY, tastoL1, tastoR1, tastoL2, tastoR2, tastoStart, tastoSelect, tastoEsc,
 	tastoAh, tastoBh, tastoXh, tastoYh, tastoL1h, tastoR1h, tastoL2h, tastoR2h, tastoStarth, tastoSelecth;
 
 	switch giocatore
@@ -29,6 +29,7 @@ function scr_comandi(giocatore=0){
 			tastoR2 = keyboard_check_pressed(ord("F"));
 			tastoStart = keyboard_check_pressed(vk_enter);
 			tastoSelect = keyboard_check_pressed(vk_space);
+			tastoEsc = keyboard_check_pressed(vk_escape)
 		}
 		break;
 	}
@@ -62,6 +63,7 @@ function scr_comandi(giocatore=0){
 	confirmPress = tastoA || gamepad_button_check_pressed(giocatore,gp_face1) 
 	confirmHold = tastoAh || gamepad_button_check(giocatore,gp_face1)
 	selectPress = tastoSelect || gamepad_button_check_pressed(giocatore,gp_select)
+	escPress = tastoEsc;
 	//magicoatt = keyboard_check_pressed(ord("C")) || gamepad_button_check_pressed(giocatore,gp_face3);
 
 	

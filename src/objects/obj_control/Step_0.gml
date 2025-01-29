@@ -16,12 +16,13 @@ else if room = rm_game
 {
 	if !gameover
 	{
+		score_sent = false;
 		alarm[9] = 90;
 		alarm[4] = 180;
 		if !instance_exists(obj_bolla)
 			gameover = true;
 			
-		if pausePress && !pausato
+		if (pausePress || escPress) && !pausato
 		{
 			pausato = true;
 		}
@@ -49,8 +50,12 @@ else if room = rm_game
 		if floor(punteggio) > record[NumGiocatori]
 		{
 			record[NumGiocatori] = floor(punteggio);
-			scr_send_score(nome,punteggio);
 			scr_record();
+		}
+		if !score_sent
+		{
+			score_sent = true;
+			scr_send_score(nome,punteggio);
 		}
 		
 		if sxPress
